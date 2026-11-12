@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Motion Story — Style Reference Preview</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b1019;color:#e8eff5;font:15px system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;min-height:100vh}header{padding:15px 12px 8px;text-align:center}header strong{font-size:20px}small{color:#a6b3c3}nav{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;padding:10px 12px}a{color:#dbe9f2;text-decoration:none;background:#273346;border-radius:20px;padding:7px 12px}a.active{background:#4cbeae;color:#062126}main{width:min(420px,92vw);aspect-ratio:9/16;border:1px solid #364358;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0009}canvas{display:block;width:100%;height:100%}.tools{display:flex;gap:14px;align-items:center;padding:12px}.tools button{border:0;color:white;background:#34445d;padding:8px 18px;border-radius:9px;cursor:pointer}.tools input{width:180px}footer{padding-bottom:18px;color:#96a6b9;text-align:center;font-size:12px}
+</style></head>
+<body><header><strong>Motion Story · Style Lab</strong><div><small>6 original, research-informed visual references · deterministic preview</small></div></header>
+<nav id="nav"></nav><main><canvas id="v" width="1080" height="1920"></canvas></main>
+<div class="tools"><button id="pause">Pause</button><button id="restart">Restart</button><input id="seek" type="range" min="0" max="12" step=".01" value="0"><output id="time">0.00s</output></div><footer>Space: pause · R: restart · ?clean=1&amp;t=4.2: static render frame</footer>
+<script>
+"use strict";
+const styles=[
+{id:"storyflow",name:"Storyflow",bg:"#071321",fg:"#F5F1E8",a:"#53E2D0",b:"#FF916D",hook:["KE MANA","IDE PERGI?"],label:"KONEKSI MENGUBAH CERITA",type:"network"},
+{id:"curiosity-lab",name:"Curiosity Lab",bg:"#F7F1DD",fg:"#283E4A",a:"#E37E46",b:"#6AB9AC",hook:["KOK BISA","BERBEDA?"],label:"DUA KONDISI, SATU PERTANYAAN",type:"test"},
+{id:"data-shock",name:"Data Shock",bg:"#130E25",fg:"#F6F3FA",a:"#A6FF65",b:"#FBBF4B",hook:["1 JUTA","DETIK?"],label:"SKALA YANG MENGEJUTKAN",type:"bars"},
+{id:"myth-breaker",name:"Myth Breaker",bg:"#F3F6F5",fg:"#182D32",a:"#EF654D",b:"#4AA69D",hook:["MITOS","ATAU FAKTA?"],label:"UJI ASUMSIMU DENGAN BUKTI",type:"split"},
+{id:"micro-drama",name:"Micro Drama",bg:"#1B1730",fg:"#FFF0DA",a:"#F2B86B",b:"#E36370",hook:["SATU","KEPUTUSAN"],label:"SEBUAH PILIHAN, DUA AKIBAT",type:"branch"},
+{id:"product-xray",name:"Product X-Ray",bg:"#F2F5F7",fg:"#182A38",a:"#4BB3D2",b:"#FF805F",hook:["APA YANG","BERBEDA?"],label:"LIHAT CARA KERJANYA",type:"xray"}];
+const qs=new URLSearchParams(location.search), chosen=styles.find(x=>x.id===qs.get("style"))||styles[0];
+document.querySelector("#nav").innerHTML=styles.map(s=>'<a class="'+(s.id===chosen.id?'active':'')+'" href="?style='+s.id+'">'+s.name+'</a>').join('');
+const c=document.querySelector("#v"),x=c.getContext("2d"),W=1080,H=1920,D=12,clean=qs.has("clean");
+let t=Math.max(0,Math.min(D,Number(qs.get("t"))||0)),running=!clean,last=0;
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),ease=v=>{v=clamp(v);return v*v*(3-2*v)},mix=(a,b,p)=>a+(b-a)*p;
+function line(a,b,c,d,color,width=6){x.beginPath();x.moveTo(a,b);x.lineTo(c,d);x.strokeStyle=color;x.lineWidth=width;x.lineCap="round";x.stroke()}
+function dot(px,py,r,color){x.beginPath();x.arc(px,py,Math.max(.01,r),0,Math.PI*2);x.fillStyle=color;x.fill()}
+function text(s,px,py,size=70,color=chosen.fg,align="center"){x.fillStyle=color;x.textAlign=align;x.textBaseline="middle";x.font="900 "+size+"px system-ui, sans-serif";x.fillText(s,px,py)}
+function glow(px,py,r,color){const g=x.createRadialGradient(px,py,0,px,py,r);g.addColorStop(0,color+"58");g.addColorStop(1,color+"00");x.fillStyle=g;x.fillRect(px-r,py-r,2*r,2*r)}
+function roundrect(px,py,w,h,r,fill){x.fillStyle=fill;x.beginPath();x.roundRect(px,py,w,h,r);x.fill()}
+function bg(t){x.fillStyle=chosen.bg;x.fillRect(0,0,W,H);for(let i=0;i<45;i++){let xx=(i*317+57)%W,yy=(i*593+13)%H;dot(xx+Math.sin(t*.25+i)*12,yy,1.5+i%3,chosen.fg+"2a")}glow(540,900+Math.sin(t*.7)*40,700,chosen.a)}
+function title(t){let q=ease(t/.9),up=ease((t-2.4)/.7);x.save();x.globalAlpha=q*(1-up);let yy=390-40*q-120*up;text(chosen.hook[0],540,yy,108);text(chosen.hook[1],540,yy+124,112,chosen.a);x.restore()}
+function graphic(t){
+let phase=clamp((t-1)/6),open=ease((t-1)/1.5),p=t*1.9;
+x.save();x.translate(540,1050);x.rotate(Math.sin(t*.3)*.07);
+if(chosen.type==="network"){for(let i=0;i<6;i++){const a=i*Math.PI/3+p*.08,rr=320*open,xx=Math.cos(a)*rr,yy=Math.sin(a)*rr;line(0,0,xx*ease((t-1.1-i*.11)/1.2),yy*ease((t-1.1-i*.11)/1.2),chosen.a+"85",8);dot(xx,yy,26*open,chosen.b)}}
+if(chosen.type==="test"){for(let k of [-1,1]){let xx=k*220;roundrect(xx-125,-110,250,300,40,chosen.fg+"1f");roundrect(xx-112,40+(k===1?Math.sin(p)*35:0),224,130,25,k===-1?chosen.a:chosen.b);for(let i=0;i<4;i++)dot(xx-75+i*50,-20+Math.sin(p+i+k)*18,11,chosen.fg)}}
+if(chosen.type==="bars"){for(let i=0;i<5;i++){let h=(130+i*i*65)*ease((t-1-i*.14)/1.5);roundrect(-350+i*143,260-h,88,h,20,i===4?chosen.b:chosen.a)}text("×1000",0,-250,90,chosen.fg)}
+if(chosen.type==="split"){roundrect(-350,-270,325,540,32,chosen.a);roundrect(25,-270,325,540,32,chosen.b);text("?",-188,0,210,chosen.bg);text("✓",190,0,200,chosen.bg);line(-40,-350,40,350,chosen.fg,9)}
+if(chosen.type==="branch"){line(0,220,0,-50,chosen.a,18);line(0,-50,-290,-310,chosen.a,18);line(0,-50,290,-310,chosen.b,18);dot(0,220,75,chosen.a);dot(-290,-310,60,chosen.a);dot(290,-310,60,chosen.b)}
+if(chosen.type==="xray"){for(let i=0;i<4;i++){let off=(i-1.5)*125*open;roundrect(-240+off,-240+i*90,480,120,32,i%2?chosen.a:chosen.b);line(-280+off,-170+i*90,280+off,-170+i*90,chosen.fg+"80",4)}}
+dot(0,0,50+8*Math.sin(p),chosen.fg);for(let j=0;j<3;j++){x.beginPath();x.arc(0,0,90+((t*.65+j/3)%1)*95,0,Math.PI*2);x.strokeStyle=chosen.a+Math.round((1-((t*.65+j/3)%1))*.28*255).toString(16).padStart(2,"0");x.lineWidth=5;x.stroke()}
+x.restore()}
+function takeaway(t){let q=ease((t-6.3)/1),fade=ease((t-9.8)/.7);x.save();x.globalAlpha=q*(1-fade);text("CERITA ADA",540,1420-25*q,82,chosen.fg);text("DI BALIK DATA",540,1510-25*q,83,chosen.a);x.restore();let fin=ease((t-10)/1.1);if(fin){x.save();x.globalAlpha=fin;roundrect(145,680,790,430,52,chosen.a);text("MOTION",540,840,125,chosen.bg);text("STORY",540,985,130,chosen.bg);x.restore()}}
+function draw(time){const t=clamp(time,0,D);bg(t);graphic(t);title(t);takeaway(t);text(chosen.name.toUpperCase(),540,165,37,chosen.fg);line(190,216,890,216,chosen.a+"88",5);text(chosen.label,540,1740,37,chosen.fg);line(140,1823,140+800*t/D,1823,chosen.a,10)}
+function frame(ms){if(!last)last=ms;if(running)t=(t+(ms-last)/1000)%D;last=ms;draw(t);document.querySelector("#seek").value=t;document.querySelector("#time").value=t.toFixed(2)+"s";requestAnimationFrame(frame)}
+const pause=document.querySelector("#pause");function update(){pause.textContent=running?"Pause":"Play"}
+pause.onclick=()=>{running=!running;update()};document.querySelector("#restart").onclick=()=>{t=0;running=!clean;update()};document.querySelector("#seek").oninput=e=>{t=Number(e.target.value);running=false;update();draw(t)};
+document.addEventListener("keydown",e=>{if(e.code==="Space"){e.preventDefault();running=!running;update()}if(e.key.toLowerCase()==="r"){t=0;running=!clean;update()}});
+update();draw(t);requestAnimationFrame(frame);
+</script></body></html>
