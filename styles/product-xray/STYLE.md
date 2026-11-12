@@ -1,12 +1,14 @@
 # Product X-Ray
 
+![Product X-Ray visual reference](../../assets/styles/product-xray.svg)
+
 **Style ID:** `product-xray`  
 **Status:** reference concept; prototype with the shared demo engine  
 **Niches:** gadgets, affiliate, product-education  
 **Hook:** problem-and-demonstration
 
 ## Original visual system
-Palette: background `#F2F5F7` · primary `#182A38` · accent `#4BB3D2` · type `#FF805F`.
+Palette: background `#F2F5F7` · primary `#182A38` · accent `#4BB3D2` · counterpoint `#FF805F` · type `#182A38`.
 
 Recurring motif: **exploded-object-mechanism**. Motion grammar: component separation, exploded diagram, side-by-side result. Each beat must alter the underlying evidence rather than just fading to a new text card.
 

@@ -8,7 +8,7 @@ description: Design and build original, narrative-driven browser motion graphics
 Motion Story creates genuine time-based visual storytelling rather than a slideshow. Choose the visual identity from the topic and intended audience; Storyflow is an available original style, not an obligation for every project.
 
 ## Start here
-1. Read `styles/catalog.json`. If the user explicitly names a style, use it. If no style is named, randomly select one from the styles compatible with the topic and audience (not blindly from all styles). Record the chosen style and sampling seed/draw in the brief; keep that style fixed throughout editing and rendering. Avoid recently repeated styles where history is available. Then read `styles/<style-id>/STYLE.md`. Read `assets/styles/<style-id>.svg` as the visual reference. `styles/preview.html?style=<style-id>` currently supports only the initial six styles; do not claim animated previews for the additional five.
+1. Read `styles/catalog.json`. If the user explicitly names a style, use it. If no style is named, randomly select one from the styles compatible with the topic and audience (not blindly from all styles). Record the chosen style and sampling seed/draw in the brief; keep that style fixed throughout editing and rendering. Avoid recently repeated styles where history is available. Then read `styles/<style-id>/STYLE.md`. Read `assets/styles/<style-id>.svg` as the visual reference. `styles/preview.html?style=<style-id>` currently supports only the initial six styles; do not claim animated previews for the other thirteen styles, which have static SVG references only.
 2. Define audience, platform, aspect ratio, duration, narrative thesis and emotional tone. If omitted, default to a 30-second 9:16 educational short with no audio, without blocking implementation.
 3. Write a short beat sheet: **hook → curiosity → visual proof → reveal → takeaway**. Treat this as a narrative function, not a rigid scene template.
 4. Plan continuous subject identity: one object, connected graphic, or visual motif persists across transitions.
@@ -17,6 +17,8 @@ Motion Story creates genuine time-based visual storytelling rather than a slides
 ## Quality gates
 - **No PowerPoint effect**: never present a static headline atop a static image, fade it out, then replace it with another static card. Move the visual world or transform the evidence itself.
 - Animate meaningful evidence: numbers, relationships, causal connections, or spatial comparisons.
+- Vary shot size deliberately (wide ↔ medium close-up ↔ close-up) on story beats, with text arriving after the camera; keep captions and labels on the screen layer, outside the camera rig. See `docs/MOTION_GUIDE.md` § "Shot size — camera to element" (the preview implements this rig).
+- If a real video clip is used, treat it as a footage layer locked to the timeline clock — trimmed, masked or graded, animated via its wrapper, never a full-screen autoplay insert. See `docs/MOTION_GUIDE.md` § "Video as a footage layer".
 - Text is concise and legible at phone size. One primary headline and no more than one secondary world label at a time.
 - Every frame must be a deterministic function of timeline time: no unseeded randomness, wall clock, increment-per-render particles, or non-deterministic physics.
 - Maintain safe areas for mobile platforms and preserve contrast.

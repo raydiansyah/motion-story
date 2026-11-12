@@ -28,7 +28,9 @@
         "mechanism",
         "answer"
       ],
-      "risk": "Clearly label simplified models; never present conceptual graphics as literal system diagrams."
+      "risk": "Clearly label simplified models; never present conceptual graphics as literal system diagrams.",
+      "image": "assets/styles/storyflow.svg",
+      "guide": "styles/storyflow/STYLE.md"
     },
     {
       "id": "curiosity-lab",
@@ -54,7 +56,9 @@
         "experiment",
         "explanation"
       ],
-      "risk": "Do not stage demonstrations as authentic experiments or omit critical controls."
+      "risk": "Do not stage demonstrations as authentic experiments or omit critical controls.",
+      "image": "assets/styles/curiosity-lab.svg",
+      "guide": "styles/curiosity-lab/STYLE.md"
     },
     {
       "id": "data-shock",
@@ -80,7 +84,9 @@
         "scale-reveal",
         "meaning"
       ],
-      "risk": "Every number needs verified units and source attribution."
+      "risk": "Every number needs verified units and source attribution.",
+      "image": "assets/styles/data-shock.svg",
+      "guide": "styles/data-shock/STYLE.md"
     },
     {
       "id": "myth-breaker",
@@ -106,7 +112,9 @@
         "proof",
         "nuance"
       ],
-      "risk": "Avoid exaggerated security claims; address limits and uncertainty."
+      "risk": "Avoid exaggerated security claims; address limits and uncertainty.",
+      "image": "assets/styles/myth-breaker.svg",
+      "guide": "styles/myth-breaker/STYLE.md"
     },
     {
       "id": "micro-drama",
@@ -132,7 +140,9 @@
         "decision",
         "consequence"
       ],
-      "risk": "Distinguish dramatization from fact; verify historical claims."
+      "risk": "Distinguish dramatization from fact; verify historical claims.",
+      "image": "assets/styles/micro-drama.svg",
+      "guide": "styles/micro-drama/STYLE.md"
     },
     {
       "id": "product-xray",
@@ -158,7 +168,9 @@
         "mechanism",
         "tradeoff"
       ],
-      "risk": "Use real product capabilities; disclose sponsorship or affiliate arrangements."
+      "risk": "Use real product capabilities; disclose sponsorship or affiliate arrangements.",
+      "image": "assets/styles/product-xray.svg",
+      "guide": "styles/product-xray/STYLE.md"
     },
     {
       "id": "kinetic-burst",
@@ -185,7 +197,9 @@
         "reveal",
         "final punchline"
       ],
-      "risk": "Avoid photosensitive flashing and keep words legible at phone size."
+      "risk": "Avoid photosensitive flashing and keep words legible at phone size.",
+      "image": "assets/styles/kinetic-burst.svg",
+      "guide": "styles/kinetic-burst/STYLE.md"
     },
     {
       "id": "isometric-flow",
@@ -211,7 +225,9 @@
         "transformation",
         "outcome"
       ],
-      "risk": "Label conceptual system diagrams as simplified models."
+      "risk": "Label conceptual system diagrams as simplified models.",
+      "image": "assets/styles/isometric-flow.svg",
+      "guide": "styles/isometric-flow/STYLE.md"
     },
     {
       "id": "editorial-cutout",
@@ -237,7 +253,9 @@
         "evidence",
         "revelation"
       ],
-      "risk": "Use licensed archival imagery and label reconstructions."
+      "risk": "Use licensed archival imagery and label reconstructions.",
+      "image": "assets/styles/editorial-cutout.svg",
+      "guide": "styles/editorial-cutout/STYLE.md"
     },
     {
       "id": "blueprint-mechanism",
@@ -263,7 +281,9 @@
         "energy-flow",
         "reassembled-mechanism"
       ],
-      "risk": "Verify dimensions and component names; label conceptual diagrams."
+      "risk": "Verify dimensions and component names; label conceptual diagrams.",
+      "image": "assets/styles/blueprint-mechanism.svg",
+      "guide": "styles/blueprint-mechanism/STYLE.md"
     },
     {
       "id": "playful-doodle",
@@ -289,7 +309,9 @@
         "animated-causal-loop",
         "simple-answer"
       ],
-      "risk": "Keep child-friendly facts accurate and text readable."
+      "risk": "Keep child-friendly facts accurate and text readable.",
+      "image": "assets/styles/playful-doodle.svg",
+      "guide": "styles/playful-doodle/STYLE.md"
     },
     {
       "id": "vintage",

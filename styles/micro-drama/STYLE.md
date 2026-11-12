@@ -1,5 +1,7 @@
 # Micro Drama
 
+![Micro Drama visual reference](../../assets/styles/micro-drama.svg)
+
 **Style ID:** `micro-drama`  
 **Status:** reference concept; prototype with the shared demo engine  
 **Niches:** history, biography, storytelling  
