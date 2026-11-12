@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "date": "2026-11-12",
   "research": "research/viral-styles-2026.md",
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
@@ -159,6 +159,137 @@
         "tradeoff"
       ],
       "risk": "Use real product capabilities; disclose sponsorship or affiliate arrangements."
+    },
+    {
+      "id": "kinetic-burst",
+      "name": "Kinetic Burst",
+      "niches": [
+        "events",
+        "music",
+        "promos",
+        "launches"
+      ],
+      "hook": "typographic-impact",
+      "palette": [
+        "#070809",
+        "#1353FF",
+        "#FFDF16",
+        "#FF4A4A"
+      ],
+      "motif": "oversized-cropped-words",
+      "motion": "per-word slam with masking and asymmetrical exits",
+      "sample": "Siap untuk sesuatu yang besar?",
+      "beats": [
+        "instant typographic hit",
+        "rhythm escalation",
+        "reveal",
+        "final punchline"
+      ],
+      "risk": "Avoid photosensitive flashing and keep words legible at phone size."
+    },
+    {
+      "id": "isometric-flow",
+      "name": "Isometric Flow",
+      "niches": [
+        "SaaS",
+        "AI systems",
+        "business processes"
+      ],
+      "hook": "show-system-outcome",
+      "palette": [
+        "#06182C",
+        "#30E1DB",
+        "#C4FF50",
+        "#EDF8FF"
+      ],
+      "motif": "connected-isometric-modules",
+      "motion": "camera travels along a visible input-process-output route",
+      "sample": "Ke mana data pergi setelah kamu klik kirim?",
+      "beats": [
+        "input",
+        "processing",
+        "transformation",
+        "outcome"
+      ],
+      "risk": "Label conceptual system diagrams as simplified models."
+    },
+    {
+      "id": "editorial-cutout",
+      "name": "Editorial Cutout",
+      "niches": [
+        "history",
+        "documentary",
+        "human stories"
+      ],
+      "hook": "archival-mystery",
+      "palette": [
+        "#E8D6B8",
+        "#7C2730",
+        "#2E4B5B",
+        "#1D2024"
+      ],
+      "motif": "torn-paper-archival-collage",
+      "motion": "paper reveals, pinboard camera journeys, annotation tracing",
+      "sample": "Satu foto ini menyimpan cerita yang terlupakan.",
+      "beats": [
+        "artifact",
+        "context",
+        "evidence",
+        "revelation"
+      ],
+      "risk": "Use licensed archival imagery and label reconstructions."
+    },
+    {
+      "id": "blueprint-mechanism",
+      "name": "Blueprint Mechanism",
+      "niches": [
+        "engineering",
+        "machines",
+        "tech gadgets"
+      ],
+      "hook": "hidden-mechanism",
+      "palette": [
+        "#031A31",
+        "#00B7FF",
+        "#FF8B2A",
+        "#DDEFFF"
+      ],
+      "motif": "exploded-technical-assembly",
+      "motion": "parts separate along measured axes and reassemble",
+      "sample": "Bagaimana motor kecil ini bekerja?",
+      "beats": [
+        "outer-shell",
+        "exploded-parts",
+        "energy-flow",
+        "reassembled-mechanism"
+      ],
+      "risk": "Verify dimensions and component names; label conceptual diagrams."
+    },
+    {
+      "id": "playful-doodle",
+      "name": "Playful Doodle",
+      "niches": [
+        "kids education",
+        "fun facts",
+        "beginner science"
+      ],
+      "hook": "friendly-visual-question",
+      "palette": [
+        "#7DD5FB",
+        "#FFDE5B",
+        "#FF645B",
+        "#8FE3AF"
+      ],
+      "motif": "hand-drawn-smiling-objects",
+      "motion": "animated marker paths, squash-stretch, character-guided explanation",
+      "sample": "Ke mana air hujan pergi setelah turun?",
+      "beats": [
+        "question",
+        "character-discovery",
+        "animated-causal-loop",
+        "simple-answer"
+      ],
+      "risk": "Keep child-friendly facts accurate and text readable."
     }
   ]
 }
