@@ -1,0 +1,164 @@
+{
+  "version": "1.0.0",
+  "date": "2026-11-12",
+  "research": "research/viral-styles-2026.md",
+  "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
+  "styles": [
+    {
+      "id": "storyflow",
+      "name": "Storyflow",
+      "niches": [
+        "AI",
+        "technology",
+        "education"
+      ],
+      "hook": "curiosity-question",
+      "palette": [
+        "#071321",
+        "#53E2D0",
+        "#FF916D",
+        "#F5F1E8"
+      ],
+      "motif": "signal-orb-network",
+      "motion": "orb-ripple to path-to-proof",
+      "sample": "Ke mana pertanyaanmu pergi saat memakai AI?",
+      "beats": [
+        "question",
+        "connections",
+        "mechanism",
+        "answer"
+      ],
+      "risk": "Clearly label simplified models; never present conceptual graphics as literal system diagrams."
+    },
+    {
+      "id": "curiosity-lab",
+      "name": "Curiosity Lab",
+      "niches": [
+        "science",
+        "facts",
+        "experiments"
+      ],
+      "hook": "show-result-first",
+      "palette": [
+        "#F7F1DD",
+        "#283E4A",
+        "#E37E46",
+        "#6AB9AC"
+      ],
+      "motif": "two-experiment-vessels",
+      "motion": "split-screen test, liquid-like reveal, annotated evidence",
+      "sample": "Kenapa dua gelas ini mencair dengan kecepatan berbeda?",
+      "beats": [
+        "visual-surprise",
+        "hypothesis",
+        "experiment",
+        "explanation"
+      ],
+      "risk": "Do not stage demonstrations as authentic experiments or omit critical controls."
+    },
+    {
+      "id": "data-shock",
+      "name": "Data Shock",
+      "niches": [
+        "statistics",
+        "economics",
+        "technology"
+      ],
+      "hook": "counterintuitive-scale",
+      "palette": [
+        "#130E25",
+        "#A6FF65",
+        "#FBBF4B",
+        "#F6F3FA"
+      ],
+      "motif": "large-number-as-physical-scale",
+      "motion": "numeric morph, scale zoom, cause-linked comparison",
+      "sample": "Seberapa lama satu juta detik dibanding satu miliar?",
+      "beats": [
+        "number",
+        "comparison",
+        "scale-reveal",
+        "meaning"
+      ],
+      "risk": "Every number needs verified units and source attribution."
+    },
+    {
+      "id": "myth-breaker",
+      "name": "Myth Breaker",
+      "niches": [
+        "digital-literacy",
+        "AI-misconceptions",
+        "consumer-education"
+      ],
+      "hook": "belief-vs-evidence",
+      "palette": [
+        "#F3F6F5",
+        "#182D32",
+        "#EF654D",
+        "#4AA69D"
+      ],
+      "motif": "split assumption and test",
+      "motion": "barrier-break with evidence layers",
+      "sample": "Mode incognito membuatmu benar-benar anonim?",
+      "beats": [
+        "belief",
+        "challenge",
+        "proof",
+        "nuance"
+      ],
+      "risk": "Avoid exaggerated security claims; address limits and uncertainty."
+    },
+    {
+      "id": "micro-drama",
+      "name": "Micro Drama",
+      "niches": [
+        "history",
+        "biography",
+        "storytelling"
+      ],
+      "hook": "in-medias-res-conflict",
+      "palette": [
+        "#1B1730",
+        "#F2B86B",
+        "#E36370",
+        "#FFF0DA"
+      ],
+      "motif": "character-choice-timeline",
+      "motion": "parallax stage, spotlight turn, timeline branching",
+      "sample": "Satu keputusan yang mengubah arah sejarah komputer",
+      "beats": [
+        "conflict",
+        "stakes",
+        "decision",
+        "consequence"
+      ],
+      "risk": "Distinguish dramatization from fact; verify historical claims."
+    },
+    {
+      "id": "product-xray",
+      "name": "Product X-Ray",
+      "niches": [
+        "gadgets",
+        "affiliate",
+        "product-education"
+      ],
+      "hook": "problem-and-demonstration",
+      "palette": [
+        "#F2F5F7",
+        "#182A38",
+        "#4BB3D2",
+        "#FF805F"
+      ],
+      "motif": "exploded-object-mechanism",
+      "motion": "component separation, exploded diagram, side-by-side result",
+      "sample": "Apa yang sebenarnya diselesaikan alat ini?",
+      "beats": [
+        "problem",
+        "demo",
+        "mechanism",
+        "tradeoff"
+      ],
+      "risk": "Use real product capabilities; disclose sponsorship or affiliate arrangements."
+    }
+  ]
+}
