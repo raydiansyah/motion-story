@@ -50,8 +50,8 @@ for file in SKILL.md README.md LICENSE; do
 done
 for dir in styles research docs assets agents; do
   if [ -d "$repo/$dir" ]; then
-    rm -rf "$dest/$dir"
-    cp -R "$repo/$dir" "$dest/$dir"
+    mkdir -p "$dest/$dir"
+    cp -R "$repo/$dir/." "$dest/$dir/"
   fi
 done
 [ -f "$dest/SKILL.md" ] && [ -f "$dest/styles/catalog.json" ] || {
