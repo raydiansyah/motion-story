@@ -8,7 +8,7 @@ Educational shorts · visual explainers · data storytelling · product demos ·
 
 [![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-6-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-**[Style gallery](#style-gallery) · [Workflow](#workflow) · [Example prompts](#example-prompts) · [Install & use](#install--use) · [FAQ](#faq)**
+**[Style gallery](#style-gallery) · [Workflow](#workflow) · [Example prompts](#example-prompts) · [Multi-agent setup](#multi-agent-setup) · [Install & use](#install--use) · [FAQ](#faq)**
 
 </div>
 
@@ -146,6 +146,32 @@ then close with an honest buying takeaway and affiliate disclosure.
 - **Avoid meaningless movement.** More zooms, glows and transitions are not equivalent to higher retention.
 - **Test hooks.** The style examples are hypotheses informed by creator guidance, not audited viral rankings.
 
+## Multi-agent setup
+
+Install the same Motion Story reference library for different AI agents. **Global** means across local projects for that agent; **project** means only the selected repository.
+
+| Agent | Global location | Project location |
+|---|---|---|
+| Claude Code / Claude CLI | `~/.claude/skills/motion-story` | `.claude/skills/motion-story` |
+| Codex CLI / IDE | `~/.agents/skills/motion-story` | `.agents/skills/motion-story` |
+| Hermes Agent | `~/.hermes/skills/motion-story` | Configure external skill directory |
+| ChatGPT | Plugins → Skills → Upload | Managed via ChatGPT UI |
+| Custom | Configured skill root | Configured skill root |
+
+**One-command local setup** (after cloning the repository):
+
+```bash
+sh scripts/install-agent.sh claude global
+sh scripts/install-agent.sh codex global
+sh scripts/install-agent.sh hermes global
+```
+
+**For ChatGPT:** run `sh scripts/package-skill.sh`, then upload `dist/skill.zip` from **Plugins → Skills → Create → Upload from your computer** where available. No shell installation into ChatGPT's servers occurs automatically.
+
+Example agent prompts: `/motion-story Buat explainer 9:16 dengan style Data Shock` (Claude Code/Hermes), `$motion-story ...` (Codex), or `Gunakan skill Motion Story ...` (ChatGPT).
+
+**[Complete platform-by-platform setup, custom-agent loader, verification and troubleshooting →](docs/AGENT_INSTALL.md)**
+
 ## Install & use
 
 ### In an AI coding agent
@@ -163,7 +189,7 @@ styles/curiosity-lab/STYLE.md. Build my short explainer
 following the style guide and the example prompts in README.
 ```
 
-The repository follows an Agent Skill-friendly layout. To use it across Claude Code, Codex, Cursor or other tools, configure that tool to load `SKILL.md` as project instructions or install/link it according to the agent's supported skill path. Loading conventions differ by agent; cloning alone does not globally enable a skill.
+The repository follows an Agent Skill-friendly layout. To use it across Claude Code, Codex, Cursor or other tools, configure that tool to load `SKILL.md` as project instructions or install/link it according to the agent's supported skill path. Loading conventions differ by agent; cloning alone does not globally enable a skill. Prefer the dedicated [multi-agent installation guide](docs/AGENT_INSTALL.md).
 
 ### In the browser
 
