@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "date": "2026-11-12",
   "research": "research/viral-styles-2026.md",
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
@@ -536,6 +536,314 @@
       "risk": "Label simulated gameplay and use authorized footage only.",
       "image": "assets/styles/game.svg",
       "guide": "styles/game/STYLE.md"
+    },
+    {
+      "id": "grainy-gradient",
+      "name": "Grainy Gradient",
+      "niches": [
+        "technology",
+        "AI",
+        "music"
+      ],
+      "hook": "sensory-teaser",
+      "palette": [
+        "#0B1030",
+        "#5468FF",
+        "#19D3D3",
+        "#EEF1FF"
+      ],
+      "motif": "glowing-arch-portal",
+      "motion": "camera travels through layered glowing shapes; a guiding orb leads the eye",
+      "sample": "Masuk lebih dalam — jawabannya di ujung cahaya.",
+      "beats": [
+        "glow",
+        "layers",
+        "journey",
+        "reveal"
+      ],
+      "risk": "Glow and grain must never blur text or fake a real product interface.",
+      "image": "assets/styles/grainy-gradient.svg",
+      "guide": "styles/grainy-gradient/STYLE.md"
+    },
+    {
+      "id": "poster-colorblock",
+      "name": "Poster Color-Block",
+      "niches": [
+        "events",
+        "music",
+        "launches"
+      ],
+      "hook": "bold-announcement",
+      "palette": [
+        "#FFD91A",
+        "#FF4D8D",
+        "#2743E8",
+        "#141414"
+      ],
+      "motif": "giant-cropped-type-blocks",
+      "motion": "solid color fields slam in on the beat; cropped words punch the frame edge",
+      "sample": "Tiga malam, 48 panggung, satu kota bernyanyi.",
+      "beats": [
+        "slam",
+        "stack",
+        "countdown",
+        "finale"
+      ],
+      "risk": "Never crop away dates, prices or names that carry the information.",
+      "image": "assets/styles/poster-colorblock.svg",
+      "guide": "styles/poster-colorblock/STYLE.md"
+    },
+    {
+      "id": "product-tour",
+      "name": "Product Tour",
+      "niches": [
+        "SaaS",
+        "dashboards",
+        "B2B"
+      ],
+      "hook": "claim-then-proof",
+      "palette": [
+        "#F2F5F0",
+        "#0C5A3E",
+        "#35B26F",
+        "#152219"
+      ],
+      "motif": "floating-ui-claim-card",
+      "motion": "camera zooms into the exact UI element being clicked; claims land beside the interface",
+      "sample": "87,5% hadir — tanpa spreadsheet sama sekali.",
+      "beats": [
+        "claim",
+        "zoom",
+        "click",
+        "result"
+      ],
+      "risk": "Use real product UI or clearly fictional demo data; never present invented metrics as customer results.",
+      "image": "assets/styles/product-tour.svg",
+      "guide": "styles/product-tour/STYLE.md"
+    },
+    {
+      "id": "flat-vector",
+      "name": "Flat Vector",
+      "niches": [
+        "fintech",
+        "consumer apps",
+        "e-commerce"
+      ],
+      "hook": "benefit-promise",
+      "palette": [
+        "#D9F24F",
+        "#7B4FE0",
+        "#FFF6E3",
+        "#1E2145"
+      ],
+      "motif": "flat-phone-paper-plane",
+      "motion": "flat shapes pop with gentle overshoot; UI is drawn in the same flat language",
+      "sample": "Uangmu bergerak secepat kamu berpikir.",
+      "beats": [
+        "need",
+        "tap",
+        "send",
+        "arrive"
+      ],
+      "risk": "Financial speed or savings claims need a real basis in the product.",
+      "image": "assets/styles/flat-vector.svg",
+      "guide": "styles/flat-vector/STYLE.md"
+    },
+    {
+      "id": "flat-pop-photo",
+      "name": "Flat Pop Photo",
+      "niches": [
+        "consumer apps",
+        "campaigns",
+        "e-commerce"
+      ],
+      "hook": "social-proof-pop",
+      "palette": [
+        "#FFF6E9",
+        "#FF4A2D",
+        "#FFC531",
+        "#2A1A5E"
+      ],
+      "motif": "photo-cutout-stickers",
+      "motion": "photo cutouts pop in with stickers; brand color fields snap when a visible trigger fires",
+      "sample": "Akhir pekanmu beres dalam sekali ketuk.",
+      "beats": [
+        "scroll-stop",
+        "pop",
+        "friends",
+        "booked"
+      ],
+      "risk": "Photo cutouts need licensed images or generated fictional people; real people need releases.",
+      "image": "assets/styles/flat-pop-photo.svg",
+      "guide": "styles/flat-pop-photo/STYLE.md"
+    },
+    {
+      "id": "continuous-action",
+      "name": "Continuous Action",
+      "niches": [
+        "transport",
+        "logistics",
+        "processes"
+      ],
+      "hook": "living-number",
+      "palette": [
+        "#DFF3FA",
+        "#E23B3B",
+        "#7FC96B",
+        "#173F5F"
+      ],
+      "motif": "never-stopping-subject",
+      "motion": "one subject never stops; numbers, maps and gauges live inside the moving world",
+      "sample": "320 km/jam, dan ia tak berhenti di satu kota pun.",
+      "beats": [
+        "launch",
+        "speed",
+        "route",
+        "arrival"
+      ],
+      "risk": "Speed, distance and time figures must be accurate for the subject shown.",
+      "image": "assets/styles/continuous-action.svg",
+      "guide": "styles/continuous-action/STYLE.md"
+    },
+    {
+      "id": "visual-journalism",
+      "name": "Visual Journalism",
+      "niches": [
+        "news",
+        "current issues",
+        "documentary"
+      ],
+      "hook": "evidence-reveal",
+      "palette": [
+        "#0A0A0A",
+        "#FFE93B",
+        "#E5322D",
+        "#F5F2EA"
+      ],
+      "motif": "annotated-photo-evidence",
+      "motion": "photos land on black; highlighter strokes and dashed circles trace the evidence",
+      "sample": "4 dari 10 kapal lewat satu dermaga yang sama.",
+      "beats": [
+        "headline",
+        "photo",
+        "annotate",
+        "number"
+      ],
+      "risk": "Photos need source and date tags; generated imagery must be labeled illustrative, never passed off as news photography.",
+      "image": "assets/styles/visual-journalism.svg",
+      "guide": "styles/visual-journalism/STYLE.md"
+    },
+    {
+      "id": "white-catalog",
+      "name": "White Catalog",
+      "niches": [
+        "products",
+        "brands",
+        "reviews"
+      ],
+      "hook": "closer-look",
+      "palette": [
+        "#FAFAF7",
+        "#FF6B35",
+        "#D64541",
+        "#161616"
+      ],
+      "motif": "annotated-product-cutout",
+      "motion": "product cutouts slide across a white grid; handwritten notes point at the details that matter",
+      "sample": "Lihat lebih dekat: 248 gram untuk lari jauh.",
+      "beats": [
+        "grid",
+        "product",
+        "detail",
+        "verdict"
+      ],
+      "risk": "Specs, weights and prices must be verified against the real product.",
+      "image": "assets/styles/white-catalog.svg",
+      "guide": "styles/white-catalog/STYLE.md"
+    },
+    {
+      "id": "vintage-sketch",
+      "name": "Vintage Sketch",
+      "niches": [
+        "history",
+        "biography",
+        "education"
+      ],
+      "hook": "chapter-reveal",
+      "palette": [
+        "#E9D9B8",
+        "#8A6D3B",
+        "#B3542E",
+        "#2E2015"
+      ],
+      "motif": "engraved-chapter-plate",
+      "motion": "engraved lines draw themselves; chapter plates turn like the pages of an old book",
+      "sample": "Satu mesin menulis ulang satu abad.",
+      "beats": [
+        "chapter",
+        "machine",
+        "spread",
+        "legacy"
+      ],
+      "risk": "Dates, inventors and quotations must be fact-checked; label reconstructed scenes.",
+      "image": "assets/styles/vintage-sketch.svg",
+      "guide": "styles/vintage-sketch/STYLE.md"
+    },
+    {
+      "id": "cartoon-collage",
+      "name": "Cartoon Collage",
+      "niches": [
+        "science",
+        "education",
+        "kids"
+      ],
+      "hook": "curiosity-question",
+      "palette": [
+        "#FBF3DF",
+        "#FF6B35",
+        "#2A9D8F",
+        "#22304A"
+      ],
+      "motif": "cutout-clue-board",
+      "motion": "flat cutouts land on cream paper; clue pills and handwriting connect the evidence",
+      "sample": "Kenapa dinosaurus bisa lenyap dari Bumi?",
+      "beats": [
+        "question",
+        "clue",
+        "cause",
+        "twist"
+      ],
+      "risk": "Science claims must match current consensus; present hypotheses as hypotheses.",
+      "image": "assets/styles/cartoon-collage.svg",
+      "guide": "styles/cartoon-collage/STYLE.md"
+    },
+    {
+      "id": "cartoon-stage",
+      "name": "Cartoon Stage",
+      "niches": [
+        "education",
+        "kids",
+        "stories"
+      ],
+      "hook": "character-journey",
+      "palette": [
+        "#EAF6EF",
+        "#F2762E",
+        "#1F8A8A",
+        "#20404A"
+      ],
+      "motif": "living-stage-character",
+      "motion": "jointed characters act on one living stage; the world reacts around them, no captions needed",
+      "sample": "Hari ini Budi belajar kenapa harga naik.",
+      "beats": [
+        "stage",
+        "journey",
+        "encounter",
+        "lesson"
+      ],
+      "risk": "Acting must carry the story without captions; keep character joints clean at mobile size.",
+      "image": "assets/styles/cartoon-stage.svg",
+      "guide": "styles/cartoon-stage/STYLE.md"
     }
   ],
   "default_selection": {
