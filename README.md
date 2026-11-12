@@ -6,7 +6,7 @@
 
 Educational shorts · visual explainers · data storytelling · product demos · kinetic typography
 
-[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-6-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-11-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **[Style gallery](#style-gallery) · [Workflow](#workflow) · [Example prompts](#example-prompts) · [Multi-agent setup](#multi-agent-setup) · [Install & use](#install--use) · [FAQ](#faq)**
 
@@ -30,7 +30,7 @@ Most automatic motion graphics are slides with transitions: headline appears, fa
 
 ## Style gallery
 
-**The pictures below are static concept/keyframes, not finished videos.** Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
+**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **11 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
 
 <table>
 <tr>
@@ -45,6 +45,17 @@ Most automatic motion graphics are slides with transitions: headline appears, fa
 <td width="50%" valign="top"><a href="styles/micro-drama/STYLE.md"><img alt="Micro Drama — a branching decision with two consequences" src="assets/styles/micro-drama.svg" width="100%"></a><br><strong><a href="styles/micro-drama/STYLE.md">05 — Micro Drama</a></strong><br>Cinematic Storytelling<br><sub>History · biography · life. Character choices, emotional stakes, branching visual narratives.</sub><br><br><strong>Hook:</strong> “Satu keputusan kecil mengubah semuanya.”</td>
 <td width="50%" valign="top"><a href="styles/product-xray/STYLE.md"><img alt="Product X-Ray — exploded diagram of a generic gadget" src="assets/styles/product-xray.svg" width="100%"></a><br><strong><a href="styles/product-xray/STYLE.md">06 — Product X-Ray</a></strong><br>Product Mechanism & Demo<br><sub>Gadgets · comparisons · affiliate. Exploded components, mechanism reveal, honest trade-offs.</sub><br><br><strong>Hook:</strong> “Apa yang sebenarnya dilakukan alat ini?”</td>
 </tr>
+</table>
+
+
+### Five additional styles
+
+These are original, lightweight **SVG style illustrations** added to the repository. The previously generated photoreal poster PNGs are not included in this commit. These frames are art direction for building motion, not motion exports.
+
+<table>
+<tr><td width="50%" valign="top"><a href="styles/kinetic-burst/STYLE.md"><img alt="Kinetic Burst style key visual" src="assets/styles/kinetic-burst.svg" width="100%"></a><br><strong><a href="styles/kinetic-burst/STYLE.md">Kinetic Burst</a></strong><br><sub>Events · launches · music. Words explode into motion; a headline is the subject.</sub><br><br><strong>Hook:</strong> “Siap untuk sesuatu yang besar?”</td><td width="50%" valign="top"><a href="styles/isometric-flow/STYLE.md"><img alt="Isometric Flow style key visual" src="assets/styles/isometric-flow.svg" width="100%"></a><br><strong><a href="styles/isometric-flow/STYLE.md">Isometric Flow</a></strong><br><sub>SaaS · systems · AI. Isometric modules connected by a journey from input to output.</sub><br><br><strong>Hook:</strong> “Ke mana data pergi setelah klik kirim?”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/editorial-cutout/STYLE.md"><img alt="Editorial Cutout style key visual" src="assets/styles/editorial-cutout.svg" width="100%"></a><br><strong><a href="styles/editorial-cutout/STYLE.md">Editorial Cutout</a></strong><br><sub>History · documentary. Archival paper collage, human stories and animated evidence.</sub><br><br><strong>Hook:</strong> “Satu foto menyimpan cerita apa?”</td><td width="50%" valign="top"><a href="styles/blueprint-mechanism/STYLE.md"><img alt="Blueprint Mechanism style key visual" src="assets/styles/blueprint-mechanism.svg" width="100%"></a><br><strong><a href="styles/blueprint-mechanism/STYLE.md">Blueprint Mechanism</a></strong><br><sub>Engineering · gadgets. Exploded technical components, dimension callouts and assembly.</sub><br><br><strong>Hook:</strong> “Bagaimana mesin ini bekerja?”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/playful-doodle/STYLE.md"><img alt="Playful Doodle style key visual" src="assets/styles/playful-doodle.svg" width="100%"></a><br><strong><a href="styles/playful-doodle/STYLE.md">Playful Doodle</a></strong><br><sub>Kids · education · facts. Hand-drawn characters, arrows and cheerful causal diagrams.</sub><br><br><strong>Hook:</strong> “Ke mana air hujan pergi?”</td><td width="50%" valign="top"><strong>How to animate these references</strong><br><br>Choose the style name, open the matching style guide, and build continuous motion with an evolving scene. Every new style includes a copy-ready prompt.<br><br><a href="docs/MOTION_GUIDE.md">Motion generation workflow</a></td></tr>
 </table>
 
 [**Open all style definitions →**](styles/catalog.json) · [**Open animated style preview →**](styles/preview.html) · [**Read evidence & hook research →**](research/viral-styles-2026.md)
@@ -137,6 +148,18 @@ then close with an honest buying takeaway and affiliate disclosure.
 
 **[Full style-specific motion prompts and visual guidance →](docs/MOTION_GUIDE.md)**
 
+### More copy-ready prompts
+
+**Kinetic Burst:** `Buat opener event 15 detik style kinetic-burst; teks besar menghantam bidang warna mengikuti beat, bukan fade slide.`
+
+**Isometric Flow:** `Jelaskan alur data aplikasi dari input ke output 30 detik, style isometric-flow, kamera mengikuti paket data di antara modul.`
+
+**Editorial Cutout:** `Buat explainer sejarah 40 detik style editorial-cutout, foto arsip berlisensi, potongan kertas dan anotasi menjadi satu dunia visual.`
+
+**Blueprint Mechanism:** `Jelaskan cara kerja motor listrik 30 detik menggunakan blueprint-mechanism, perlihatkan komponen terurai dan jalur energi yang benar.`
+
+**Playful Doodle:** `Jelaskan siklus air untuk anak 30 detik style playful-doodle, ilustrasi ramah dengan panah digambar dan karakter yang bereaksi.`
+
 ## Getting better results
 
 - **Say which style, not which copied scenes.** Request “Curiosity Lab / experimental split-screen”, not a frame-by-frame recreation of someone else's video.
@@ -202,7 +225,7 @@ Download or clone this repository and open [`styles/preview.html`](styles/previe
 | Slider | Scrub motion timeline |
 | `?style=storyflow&clean=1&t=4.2` | Freeze a deterministic reference frame |
 
-The current preview is an **illustrative 12-second multi-style demo**, not six fully produced commercial videos or an MP4 exporter.
+The existing browser preview is an **illustrative 12-second demo of the original six styles**; the five newly added styles currently have static SVG gallery references and instructions, not an integrated animated preview or MP4 exporter.
 
 ## FAQ
 
