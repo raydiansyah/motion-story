@@ -9,11 +9,11 @@ license: MIT
 Motion Story creates genuine time-based visual storytelling rather than a slideshow. Choose the visual identity from the topic and intended audience; Storyflow is an available original style, not an obligation for every project.
 
 ## Start here
-1. Read `styles/storyflow/STYLE.md` when Storyflow is requested.
+1. Choose one style from `styles/catalog.json`, then read `styles/<style-id>/STYLE.md`. For comparative visual inspection, open `styles/preview.html?style=<style-id>`.
 2. Define audience, platform, aspect ratio, duration, narrative thesis and emotional tone. If omitted, default to a 30-second 9:16 educational short with no audio, without blocking implementation.
 3. Write a short beat sheet: **hook → curiosity → visual proof → reveal → takeaway**. Treat this as a narrative function, not a rigid scene template.
 4. Plan continuous subject identity: one object, connected graphic, or visual motif persists across transitions.
-5. Use the existing `styles/storyflow/demo.html` as the runnable demonstration and timing reference, never as an excuse to repeat the same arrangement across topics.
+5. Use `styles/preview.html` as a deterministic visual reference and timing example, not as a ready-to-publish video or a generic template to repeat across topics.
 
 ## Quality gates
 - **No PowerPoint effect**: never present a static headline atop a static image, fade it out, then replace it with another static card. Move the visual world or transform the evidence itself.
@@ -35,3 +35,6 @@ Motion Story creates genuine time-based visual storytelling rather than a slides
 - Standalone browser implementation with a full time-based timeline.
 - A shot/beat script and optional voiceover script.
 - Duration, aspect ratio and exact render commands if exporting video.
+
+## Research-backed style selection
+Consult `research/viral-styles-2026.md` for cited YouTube, TikTok and Indonesia insights. Select a style by the content's hook mechanism and explanatory evidence, not by presumed virality. The six reference styles are `storyflow`, `curiosity-lab`, `data-shock`, `myth-breaker`, `micro-drama`, and `product-xray`. Test one variable per matched variant, log retention and satisfaction indicators, and refine style choices based on observed channel performance.
