@@ -1,7 +1,6 @@
 ---
 name: motion-story
 description: Design and build original, narrative-driven browser motion graphics for educational explainers, social shorts, product storytelling, infographic sequences and kinetic typography. Use this skill when a user requests a motion-story video, motion graphics style, or short-form animated explainer.
-license: MIT
 ---
 
 # Motion Story — Agent Skill
@@ -38,3 +37,6 @@ Motion Story creates genuine time-based visual storytelling rather than a slides
 
 ## Research-backed style selection
 Consult `research/viral-styles-2026.md` for cited YouTube, TikTok and Indonesia insights. Select a style by the content's hook mechanism and explanatory evidence, not by presumed virality. The six reference styles are `storyflow`, `curiosity-lab`, `data-shock`, `myth-breaker`, `micro-drama`, and `product-xray`. Test one variable per matched variant, log retention and satisfaction indicators, and refine style choices based on observed channel performance.
+
+## Cross-agent installation
+For Claude Code, Codex, Hermes, ChatGPT, and custom agents, read [docs/AGENT_INSTALL.md](docs/AGENT_INSTALL.md). Install the full skill directory, not just this file. For ChatGPT upload, package using `sh scripts/package-skill.sh` from a complete checkout. Do not assume cloud agents share a local filesystem.
