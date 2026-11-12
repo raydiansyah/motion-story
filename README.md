@@ -1,38 +1,47 @@
 # Motion Story
 
-**Motion Story** is an original, browser-first motion storytelling toolkit for educational shorts, explainers, and brand narratives. Its first visual style is **Storyflow / Living Narrative Motion**.
+**Motion Story** is an original, browser-first collection of research-informed motion storytelling styles for Indonesian short-form creators. Its starting point is the design principles of [Bang Motion](https://github.com/bangtutorial/bang-motion); the implementation and visual references here are original and do not copy its starter files.
 
-Inspired by the *principles* of timeline-driven motion design studied in [Bang Motion](https://github.com/bangtutorial/bang-motion), but built with an original visual language and standalone implementation. No code, starter templates, or image assets are copied from Bang Motion.
+## Style library
 
-## Quick start
+| Style | Niche | Hook |
+|---|---|---|
+| [Storyflow](styles/storyflow/STYLE.md) | AI, technology, education | Curiosity question |
+| [Curiosity Lab](styles/curiosity-lab/STYLE.md) | Science, unusual facts | Show the result first |
+| [Data Shock](styles/data-shock/STYLE.md) | Statistics, economics | Counterintuitive scale |
+| [Myth Breaker](styles/myth-breaker/STYLE.md) | Digital literacy | Belief vs evidence |
+| [Micro Drama](styles/micro-drama/STYLE.md) | History, stories | Start at the conflict |
+| [Product X-Ray](styles/product-xray/STYLE.md) | Gadgets and affiliate | Visible problem / demonstration |
 
-1. Open [`styles/storyflow/demo.html`](styles/storyflow/demo.html) in a modern browser (no build, CDN, or dependencies).
-2. The demo autoplays and loops. Press **Space** to pause, **R** to restart.
-3. Append `?debug=1` for a timeline scrubber. Append `?clean=1&t=4.2` for a deterministic still at 4.2 seconds.
-4. Read [the Storyflow design guide](styles/storyflow/STYLE.md) and [the agent instructions](SKILL.md) when adapting the style.
+## Open the visual reference
 
-## Storyflow
+Open [`styles/preview.html`](styles/preview.html) in a modern browser. Choose a style with the navigation at the top, or add `?style=data-shock` to the URL. This is a **12-second deterministic reference animation**, not a complete production video.
 
-- A continuous narrative built around a persistent **signal orb** and connected infographics.
-- Distinctive ink-navy background, luminous cyan, warm coral and parchment typography.
-- Layered orbital diagrams, dimensional camera pushes, typography and reactive numbers.
-- Native Canvas 2D at a fixed 1080 × 1920 design coordinate system, responsive letterbox scaling.
-- Render is a **pure function of time**: seeking to a timestamp always shows the same image.
-- No stock images, character assets or trademarked branding.
+- **Space:** pause / play
+- **R:** restart
+- **Scrub:** use the visible timeline slider
+- **Still capture:** `?style=curiosity-lab&clean=1&t=4.2`
 
-## Rendering
+The preview runs from one file, with no CDN or installation. Browser frame captures can be assembled into a video using external tools such as FFmpeg. No MP4 is included.
 
-The HTML is immediately viewable. To produce frames, open `demo.html?clean=1&t=SECONDS` in a headless browser at your target resolution and screenshot the page. Assemble the frames with FFmpeg, for example 30 fps, then add properly licensed music or voiceover. For production, use a browser automation tool (Playwright or Puppeteer) to iterate timestamps. The demo itself does not export MP4.
+## Research and agent instructions
 
-## Repository structure
+- [Exa + Firecrawl findings, hook patterns, measurement plan and cited sources](research/viral-styles-2026.md)
+- [AI agent skill instructions](SKILL.md)
+- [Machine-readable style catalog](styles/catalog.json)
+
+**Note:** These are creative hypotheses informed by platform guidance and Indonesian market research. No audited view-based ranking or guaranteed virality is claimed. Validate each style on actual channel analytics, testing hooks and topics separately.
+
+## Structure
 
 ```text
-README.md
 SKILL.md
-styles/storyflow/STYLE.md
-styles/storyflow/demo.html
+research/viral-styles-2026.md
+styles/catalog.json
+styles/preview.html
+styles/{storyflow,curiosity-lab,data-shock,myth-breaker,micro-drama,product-xray}/STYLE.md
 ```
 
 ## License
 
-MIT. See [LICENSE](LICENSE). The repository's original implementation is independent of Bang Motion. Attribution above is provided for conceptual research transparency.
+MIT. See [LICENSE](LICENSE).
