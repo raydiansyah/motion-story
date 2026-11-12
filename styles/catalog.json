@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "date": "2026-11-12",
   "research": "research/viral-styles-2026.md",
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
@@ -290,6 +290,238 @@
         "simple-answer"
       ],
       "risk": "Keep child-friendly facts accurate and text readable."
+    },
+    {
+      "id": "vintage",
+      "name": "Vintage",
+      "niches": [
+        "history",
+        "nostalgia",
+        "heritage"
+      ],
+      "hook": "lost-history-reveal",
+      "palette": [
+        "#EBD9B5",
+        "#693D31",
+        "#C78E55",
+        "#2B2926"
+      ],
+      "motif": "aged-postcard-clock-stamp",
+      "motion": "paper unfolding, archival parallax, inked annotations",
+      "sample": "Kenapa benda lama ini pernah mengubah dunia?",
+      "beats": [
+        "artifact",
+        "history",
+        "reveal",
+        "legacy"
+      ],
+      "risk": "Credit archives and label reconstructions.",
+      "image": "assets/styles/vintage.svg",
+      "guide": "styles/vintage/STYLE.md"
+    },
+    {
+      "id": "modern",
+      "name": "Modern",
+      "niches": [
+        "technology",
+        "corporate",
+        "lifestyle"
+      ],
+      "hook": "clean-visual-contrast",
+      "palette": [
+        "#F5F6FA",
+        "#162333",
+        "#565CE7",
+        "#2FC6B5"
+      ],
+      "motif": "editorial-geometric-product-grid",
+      "motion": "precision masks, spatial depth and restrained typography",
+      "sample": "Satu cara lebih sederhana untuk bekerja.",
+      "beats": [
+        "problem",
+        "focus",
+        "demonstration",
+        "result"
+      ],
+      "risk": "Avoid unsourced marketing claims.",
+      "image": "assets/styles/modern.svg",
+      "guide": "styles/modern/STYLE.md"
+    },
+    {
+      "id": "product-review",
+      "name": "Product Review",
+      "niches": [
+        "reviews",
+        "affiliate",
+        "consumer tech"
+      ],
+      "hook": "real-problem-first",
+      "palette": [
+        "#0C1620",
+        "#F1F4F8",
+        "#FFB43B",
+        "#63D5C7"
+      ],
+      "motif": "user-supplied-product-hero",
+      "motion": "product closeups, real demo, labels and pros/cons",
+      "sample": "Apakah produk ini benar-benar layak dibeli?",
+      "beats": [
+        "product hook",
+        "actual demonstration",
+        "pros cons",
+        "verdict"
+      ],
+      "risk": "BLOCKING REQUIREMENT: if no product image attached or already provided, ask user to upload product image(s) before generating final product visuals/motion. Do not invent model, appearance, specs, testing or purchase recommendation.",
+      "image": "assets/styles/product-review.svg",
+      "guide": "styles/product-review/STYLE.md"
+    },
+    {
+      "id": "cartoon",
+      "name": "Cartoon",
+      "niches": [
+        "education",
+        "comedy",
+        "family"
+      ],
+      "hook": "character-reaction",
+      "palette": [
+        "#FFF0C8",
+        "#FF695F",
+        "#50B7DC",
+        "#35436B"
+      ],
+      "motif": "expressive-original-2d-character",
+      "motion": "squash stretch, gesture arcs and staged acting",
+      "sample": "Kok bisa sih? Ini penjelasannya!",
+      "beats": [
+        "reaction",
+        "problem",
+        "explanation",
+        "payoff"
+      ],
+      "risk": "Original characters and consistent designs.",
+      "image": "assets/styles/cartoon.svg",
+      "guide": "styles/cartoon/STYLE.md"
+    },
+    {
+      "id": "manga",
+      "name": "Manga",
+      "niches": [
+        "storytelling",
+        "anime",
+        "action"
+      ],
+      "hook": "dramatic-panel",
+      "palette": [
+        "#F8F6EF",
+        "#15151C",
+        "#CE3B4E",
+        "#B8B7B2"
+      ],
+      "motif": "inked-panels-and-screentones",
+      "motion": "ink reveals, dramatic pans, cinematic panels",
+      "sample": "Satu detik sebelum semuanya berubah...",
+      "beats": [
+        "tension",
+        "panels",
+        "decisive moment",
+        "resolution"
+      ],
+      "risk": "Do not copy copyrighted manga panels or identifiable protected characters.",
+      "image": "assets/styles/manga.svg",
+      "guide": "styles/manga/STYLE.md"
+    },
+    {
+      "id": "pixel",
+      "name": "Pixel",
+      "niches": [
+        "retro gaming",
+        "coding",
+        "education"
+      ],
+      "hook": "pixel-world-discovery",
+      "palette": [
+        "#15142E",
+        "#7BE0A3",
+        "#F7C85B",
+        "#E879B2"
+      ],
+      "motif": "pixel-tiles-sprite-ui",
+      "motion": "frame stepped sprite and tile scrolls",
+      "sample": "Bagaimana internet bekerja kalau jadi game retro?",
+      "beats": [
+        "spawn",
+        "explore",
+        "mechanism",
+        "level complete"
+      ],
+      "risk": "Respect strict pixel grid; do not copy commercial game sprites.",
+      "image": "assets/styles/pixel.svg",
+      "guide": "styles/pixel/STYLE.md"
+    },
+    {
+      "id": "roblox",
+      "name": "Roblox-Inspired Blocky 3D",
+      "niches": [
+        "gaming",
+        "virtual worlds",
+        "tutorials"
+      ],
+      "hook": "voxel-challenge",
+      "palette": [
+        "#85C9FF",
+        "#F8CF55",
+        "#F35D65",
+        "#253C5D"
+      ],
+      "motif": "original-blocky-avatar-voxel-stage",
+      "motion": "rigged block character, snap turns and modular builds",
+      "sample": "Bisa nggak bangun kota dalam 30 detik?",
+      "beats": [
+        "challenge",
+        "world setup",
+        "build",
+        "result"
+      ],
+      "risk": "Use original blocky designs; no implied affiliation with Roblox; do not copy Roblox logos/assets.",
+      "image": "assets/styles/roblox.svg",
+      "guide": "styles/roblox/STYLE.md"
+    },
+    {
+      "id": "game",
+      "name": "Game Motion",
+      "niches": [
+        "gaming",
+        "esports",
+        "mechanics"
+      ],
+      "hook": "gameplay-result-first",
+      "palette": [
+        "#101226",
+        "#B46AFF",
+        "#50EADE",
+        "#FF5D83"
+      ],
+      "motif": "game-hud-world",
+      "motion": "HUD tracing, impact feedback, simulated gameplay camera",
+      "sample": "Kenapa strategi ini sering berhasil?",
+      "beats": [
+        "result",
+        "challenge",
+        "mechanics",
+        "lesson"
+      ],
+      "risk": "Label simulated gameplay and use authorized footage only.",
+      "image": "assets/styles/game.svg",
+      "guide": "styles/game/STYLE.md"
     }
-  ]
+  ],
+  "default_selection": {
+    "when_style_omitted": "random-from-contextually-eligible-styles",
+    "must_respect_user_constraints": true,
+    "selection_seed": "Record a random seed or random draw in the project brief; keep chosen style stable across the production and subsequent renders",
+    "product_review_requires_product_photo": true,
+    "exclude_product_review_without_product_image": true,
+    "avoid_recent_style_repetition": true
+  }
 }
