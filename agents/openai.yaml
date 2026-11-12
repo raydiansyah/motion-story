@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion Story"
+  short_description: "Create narrative motion graphics from six visual styles."
+  brand_color: "#53E2D0"
