@@ -6,7 +6,7 @@
 
 Educational shorts · visual explainers · data storytelling · product demos · kinetic typography
 
-[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-30-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-36-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **[Style gallery](#style-gallery) · [Workflow](#workflow) · [Example prompts](#example-prompts) · [Multi-agent setup](#multi-agent-setup) · [Install & use](#install--use) · [FAQ](#faq)**
 
@@ -30,7 +30,7 @@ Most automatic motion graphics are slides with transitions: headline appears, fa
 
 ## Style gallery
 
-**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **30 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
+**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **36 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
 
 <table>
 <tr>
@@ -81,6 +81,16 @@ Eleven further styles modeled on the style gallery of [Bang Motion](https://gith
 <tr><td width="50%" valign="top"><a href="styles/visual-journalism/STYLE.md"><img alt="Visual Journalism style key visual" src="assets/styles/visual-journalism.svg" width="100%"></a><br><strong><a href="styles/visual-journalism/STYLE.md">Visual Journalism</a></strong><br><sub>News · current issues · documentary. Black ground, real photos with source tags, highlighter and dashed annotations.</sub><br><br><strong>Hook:</strong> “4 dari 10 kapal lewat satu dermaga yang sama.”</td><td width="50%" valign="top"><a href="styles/white-catalog/STYLE.md"><img alt="White Catalog style key visual" src="assets/styles/white-catalog.svg" width="100%"></a><br><strong><a href="styles/white-catalog/STYLE.md">White Catalog</a></strong><br><sub>Products · brands · reviews. White grid, product cutouts, handwritten notes beside heavy sans type.</sub><br><br><strong>Hook:</strong> “Lihat lebih dekat: 248 gram untuk lari jauh.”</td></tr>
 <tr><td width="50%" valign="top"><a href="styles/vintage-sketch/STYLE.md"><img alt="Vintage Sketch style key visual" src="assets/styles/vintage-sketch.svg" width="100%"></a><br><strong><a href="styles/vintage-sketch/STYLE.md">Vintage Sketch</a></strong><br><sub>History · biography · education. Sepia paper, engraving art, classic serifs and rust notes.</sub><br><br><strong>Hook:</strong> “Satu mesin menulis ulang satu abad.”</td><td width="50%" valign="top"><a href="styles/cartoon-collage/STYLE.md"><img alt="Cartoon Collage style key visual" src="assets/styles/cartoon-collage.svg" width="100%"></a><br><strong><a href="styles/cartoon-collage/STYLE.md">Cartoon Collage</a></strong><br><sub>Science · education · kids. Cream paper, flat illustration cutouts, color pills and handwriting.</sub><br><br><strong>Hook:</strong> “Kenapa dinosaurus bisa lenyap dari Bumi?”</td></tr>
 <tr><td width="50%" valign="top"><a href="styles/cartoon-stage/STYLE.md"><img alt="Cartoon Stage style key visual" src="assets/styles/cartoon-stage.svg" width="100%"></a><br><strong><a href="styles/cartoon-stage/STYLE.md">Cartoon Stage</a></strong><br><sub>Education · kids · stories. One living stage per scene, jointed characters, no captions.</sub><br><br><strong>Hook:</strong> “Hari ini Budi belajar kenapa harga naik.”</td><td width="50%" valign="top"><strong>How to animate these references</strong><br><br>Choose the style name, open the matching style guide, and build continuous motion with an evolving scene. Every new style includes a copy-ready prompt.<br><br><a href="docs/MOTION_GUIDE.md">Motion generation workflow</a></td></tr>
+</table>
+
+### Six 2D character & illustration styles
+
+Six more styles modeled on a 2D animation style picker — character-led looks for history, science, tutorials, documentaries, children's stories and youth drama. Same rule: the SVG is art direction to rebuild as motion, not a slide to zoom.
+
+<table>
+<tr><td width="50%" valign="top"><a href="styles/stickman/STYLE.md"><img alt="Stickman style key visual" src="assets/styles/stickman.svg" width="100%"></a><br><strong><a href="styles/stickman/STYLE.md">Stickman</a></strong><br><sub>History · true stories · comedy. Costumed stick figures act out big stories with elastic limbs.</sub><br><br><strong>Hook:</strong> “Raja ini kehilangan takhta gara-gara satu kalimat.”</td><td width="50%" valign="top"><a href="styles/kartun-flat/STYLE.md"><img alt="Kartun Flat style key visual" src="assets/styles/kartun-flat.svg" width="100%"></a><br><strong><a href="styles/kartun-flat/STYLE.md">Kartun Flat</a></strong><br><sub>Science · facts · education. Flat characters gesture at floating props; expressions pop.</sub><br><br><strong>Hook:</strong> “Kenapa cairan ini bisa menyala hijau?”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/whiteboard-doodle/STYLE.md"><img alt="Whiteboard Doodle style key visual" src="assets/styles/whiteboard-doodle.svg" width="100%"></a><br><strong><a href="styles/whiteboard-doodle/STYLE.md">Whiteboard Doodle</a></strong><br><sub>Tutorial · business · education. A marker hand draws the explanation live on a white board.</sub><br><br><strong>Hook:</strong> “Gambar ini menjelaskan kenapa bisnismu mandek.”</td><td width="50%" valign="top"><a href="styles/kolase-kertas/STYLE.md"><img alt="Kolase Kertas style key visual" src="assets/styles/kolase-kertas.svg" width="100%"></a><br><strong><a href="styles/kolase-kertas/STYLE.md">Kolase Kertas</a></strong><br><sub>Documentary · journalism. Torn paper layers and photo cutouts pinned with tape and captions.</sub><br><br><strong>Hook:</strong> “Satu gulungan film, seribu cerita tak terucap.”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/watercolor/STYLE.md"><img alt="Watercolor style key visual" src="assets/styles/watercolor.svg" width="100%"></a><br><strong><a href="styles/watercolor/STYLE.md">Watercolor</a></strong><br><sub>Children · family · gentle stories. Paint washes bleed in softly, storybook-style.</sub><br><br><strong>Hook:</strong> “Kadang sahabat terbaik berbulu dan berekor.”</td><td width="50%" valign="top"><a href="styles/anime/STYLE.md"><img alt="Anime style key visual" src="assets/styles/anime.svg" width="100%"></a><br><strong><a href="styles/anime/STYLE.md">Anime</a></strong><br><sub>Youth · drama · fandom. Cel-shaded characters, dramatic poses and sunset pans.</sub><br><br><strong>Hook:</strong> “Besok, aku akan membuktikan semuanya.”</td></tr>
 </table>
 
 [**Open all style definitions →**](styles/catalog.json) · [**Open animated style preview →**](styles/preview.html) · [**Read evidence & hook research →**](research/viral-styles-2026.md)
@@ -284,7 +294,7 @@ Download or clone this repository and open [`styles/preview.html`](styles/previe
 | Slider | Scrub motion timeline |
 | `?style=storyflow&clean=1&t=4.2` | Freeze a deterministic reference frame |
 
-The existing browser preview is an **illustrative 12-second demo of the original six styles**; the other twenty-four styles currently have static SVG gallery references and instructions, not an integrated animated preview or MP4 exporter.
+The existing browser preview is an **illustrative 12-second demo of the original six styles**; the other thirty styles currently have static SVG gallery references and instructions, not an integrated animated preview or MP4 exporter.
 
 ## FAQ
 

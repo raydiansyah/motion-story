@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "date": "2026-11-12",
   "research": "research/viral-styles-2026.md",
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
@@ -844,6 +844,174 @@
       "risk": "Acting must carry the story without captions; keep character joints clean at mobile size.",
       "image": "assets/styles/cartoon-stage.svg",
       "guide": "styles/cartoon-stage/STYLE.md"
+    },
+    {
+      "id": "stickman",
+      "name": "Stickman",
+      "niches": [
+        "history",
+        "true stories",
+        "comedy"
+      ],
+      "hook": "character-contrast",
+      "palette": [
+        "#FFF8EC",
+        "#C0272D",
+        "#F2B035",
+        "#1A1A1A"
+      ],
+      "motif": "costumed-stick-figure",
+      "motion": "stick figures with elastic limbs act out big stories; costumes and props carry the era",
+      "sample": "Raja ini kehilangan takhta gara-gara satu kalimat.",
+      "beats": [
+        "crown",
+        "court",
+        "mistake",
+        "fall"
+      ],
+      "risk": "Stick figures must stay expressive at mobile size; historical claims still need fact-checking.",
+      "image": "assets/styles/stickman.svg",
+      "guide": "styles/stickman/STYLE.md"
+    },
+    {
+      "id": "kartun-flat",
+      "name": "Kartun Flat",
+      "niches": [
+        "science",
+        "facts",
+        "education"
+      ],
+      "hook": "curiosity-question",
+      "palette": [
+        "#2E8C82",
+        "#FFD23F",
+        "#FF8FA3",
+        "#FFFFFF"
+      ],
+      "motif": "flat-character-explainer",
+      "motion": "flat characters gesture at floating props; expressions swap in one-frame pops",
+      "sample": "Kenapa cairan ini bisa menyala hijau?",
+      "beats": [
+        "question",
+        "prop",
+        "reaction",
+        "answer"
+      ],
+      "risk": "Science facts must be checked; character expressions must not contradict the narration.",
+      "image": "assets/styles/kartun-flat.svg",
+      "guide": "styles/kartun-flat/STYLE.md"
+    },
+    {
+      "id": "whiteboard-doodle",
+      "name": "Whiteboard Doodle",
+      "niches": [
+        "tutorial",
+        "business",
+        "education"
+      ],
+      "hook": "drawn-explanation",
+      "palette": [
+        "#FFFFFF",
+        "#1A1A1A",
+        "#E5322D",
+        "#2743E8"
+      ],
+      "motif": "marker-doodle-board",
+      "motion": "a marker hand draws the explanation live; doodles underline and circle the key point",
+      "sample": "Gambar ini menjelaskan kenapa bisnismu mandek.",
+      "beats": [
+        "blank",
+        "sketch",
+        "chart",
+        "takeaway"
+      ],
+      "risk": "Doodles must stay legible; never let sketchy lines cross or cover important text.",
+      "image": "assets/styles/whiteboard-doodle.svg",
+      "guide": "styles/whiteboard-doodle/STYLE.md"
+    },
+    {
+      "id": "kolase-kertas",
+      "name": "Kolase Kertas",
+      "niches": [
+        "documentary",
+        "journalism",
+        "human stories"
+      ],
+      "hook": "photo-evidence",
+      "palette": [
+        "#E7DCC8",
+        "#B3402A",
+        "#5A6148",
+        "#232323"
+      ],
+      "motif": "torn-paper-photo-collage",
+      "motion": "torn paper layers slide and pin into place; photo cutouts land with tape and captions",
+      "sample": "Satu gulungan film, seribu cerita tak terucap.",
+      "beats": [
+        "photo",
+        "layer",
+        "context",
+        "reveal"
+      ],
+      "risk": "Photos need sources and releases; torn-paper collage must not fake archival evidence.",
+      "image": "assets/styles/kolase-kertas.svg",
+      "guide": "styles/kolase-kertas/STYLE.md"
+    },
+    {
+      "id": "watercolor",
+      "name": "Watercolor",
+      "niches": [
+        "children",
+        "family",
+        "gentle stories"
+      ],
+      "hook": "soft-storybook",
+      "palette": [
+        "#F3EFE2",
+        "#F0B429",
+        "#7FAE7A",
+        "#4A3F35"
+      ],
+      "motif": "storybook-watercolor-wash",
+      "motion": "paint washes bleed in softly; characters move with storybook gentleness",
+      "sample": "Kadang sahabat terbaik berbulu dan berekor.",
+      "beats": [
+        "wash",
+        "meet",
+        "hug",
+        "warmth"
+      ],
+      "risk": "Soft edges must not blur captions; keep text on clean, unpainted paper areas.",
+      "image": "assets/styles/watercolor.svg",
+      "guide": "styles/watercolor/STYLE.md"
+    },
+    {
+      "id": "anime",
+      "name": "Anime",
+      "niches": [
+        "youth",
+        "drama",
+        "fandom"
+      ],
+      "hook": "cliffhanger-vow",
+      "palette": [
+        "#3B2F5E",
+        "#FF9A5A",
+        "#FFD9A0",
+        "#F5F0E8"
+      ],
+      "motif": "cel-shaded-sunset-scene",
+      "motion": "cel-shaded characters hold dramatic poses; speed lines and slow sunset pans raise the stakes",
+      "sample": "Besok, aku akan membuktikan semuanya.",
+      "beats": [
+        "vow",
+        "rival",
+        "clash",
+        "cliffhanger"
+      ],
+      "risk": "Keep every character original; never copy a copyrighted anime character, hairstyle or uniform exactly.",
+      "image": "assets/styles/anime.svg",
+      "guide": "styles/anime/STYLE.md"
     }
   ],
   "default_selection": {
