@@ -8,7 +8,7 @@ description: Design and build original, narrative-driven browser motion graphics
 Motion Story creates genuine time-based visual storytelling rather than a slideshow. Choose the visual identity from the topic and intended audience; Storyflow is an available original style, not an obligation for every project.
 
 ## Start here
-1. Choose one style from `styles/catalog.json`, then read `styles/<style-id>/STYLE.md`. For comparative visual inspection, open `styles/preview.html?style=<style-id>`.
+1. Choose one style from `styles/catalog.json`, then read `styles/<style-id>/STYLE.md`. Read `assets/styles/<style-id>.svg` as the visual reference. `styles/preview.html?style=<style-id>` currently supports only the initial six styles; do not claim animated previews for the additional five.
 2. Define audience, platform, aspect ratio, duration, narrative thesis and emotional tone. If omitted, default to a 30-second 9:16 educational short with no audio, without blocking implementation.
 3. Write a short beat sheet: **hook → curiosity → visual proof → reveal → takeaway**. Treat this as a narrative function, not a rigid scene template.
 4. Plan continuous subject identity: one object, connected graphic, or visual motif persists across transitions.
@@ -36,7 +36,7 @@ Motion Story creates genuine time-based visual storytelling rather than a slides
 - Duration, aspect ratio and exact render commands if exporting video.
 
 ## Research-backed style selection
-Consult `research/viral-styles-2026.md` for cited YouTube, TikTok and Indonesia insights. Select a style by the content's hook mechanism and explanatory evidence, not by presumed virality. The six reference styles are `storyflow`, `curiosity-lab`, `data-shock`, `myth-breaker`, `micro-drama`, and `product-xray`. Test one variable per matched variant, log retention and satisfaction indicators, and refine style choices based on observed channel performance.
+Consult `research/viral-styles-2026.md` for cited YouTube, TikTok and Indonesia insights. Select a style by the content's hook mechanism and explanatory evidence, not by presumed virality. The eleven reference styles are `storyflow`, `curiosity-lab`, `data-shock`, `myth-breaker`, `micro-drama`, `product-xray`, `kinetic-burst`, `isometric-flow`, `editorial-cutout`, `blueprint-mechanism`, and `playful-doodle`. Test one variable per matched variant, log retention and satisfaction indicators, and refine style choices based on observed channel performance.
 
 ## Cross-agent installation
 For Claude Code, Codex, Hermes, ChatGPT, and custom agents, read [docs/AGENT_INSTALL.md](docs/AGENT_INSTALL.md). Install the full skill directory, not just this file. For ChatGPT upload, package using `sh scripts/package-skill.sh` from a complete checkout. Do not assume cloud agents share a local filesystem.
