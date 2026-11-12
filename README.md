@@ -6,7 +6,7 @@
 
 Educational shorts · visual explainers · data storytelling · product demos · kinetic typography
 
-[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-11-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-19-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **[Style gallery](#style-gallery) · [Workflow](#workflow) · [Example prompts](#example-prompts) · [Multi-agent setup](#multi-agent-setup) · [Install & use](#install--use) · [FAQ](#faq)**
 
@@ -30,7 +30,7 @@ Most automatic motion graphics are slides with transitions: headline appears, fa
 
 ## Style gallery
 
-**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **11 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
+**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **19 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
 
 <table>
 <tr>
@@ -58,7 +58,41 @@ These are original, lightweight **SVG style illustrations** added to the reposit
 <tr><td width="50%" valign="top"><a href="styles/playful-doodle/STYLE.md"><img alt="Playful Doodle style key visual" src="assets/styles/playful-doodle.svg" width="100%"></a><br><strong><a href="styles/playful-doodle/STYLE.md">Playful Doodle</a></strong><br><sub>Kids · education · facts. Hand-drawn characters, arrows and cheerful causal diagrams.</sub><br><br><strong>Hook:</strong> “Ke mana air hujan pergi?”</td><td width="50%" valign="top"><strong>How to animate these references</strong><br><br>Choose the style name, open the matching style guide, and build continuous motion with an evolving scene. Every new style includes a copy-ready prompt.<br><br><a href="docs/MOTION_GUIDE.md">Motion generation workflow</a></td></tr>
 </table>
 
+
+### Eight new style references
+
+The visual references are original static SVG illustrations. They describe art direction; the agent must reconstruct animated subjects and scenes rather than zooming a single static image.
+
+<table>
+<tr><td width="50%" valign="top"><a href="styles/vintage/STYLE.md"><img alt="Vintage style illustration" src="assets/styles/vintage.svg" width="100%"></a><br><strong><a href="styles/vintage/STYLE.md">Vintage</a></strong><br><sub>History · nostalgia — Archival paper, postcards and ink marks.</sub><br><br><strong>Hook:</strong> “Kenapa benda lama ini mengubah dunia?”</td><td width="50%" valign="top"><a href="styles/modern/STYLE.md"><img alt="Modern style illustration" src="assets/styles/modern.svg" width="100%"></a><br><strong><a href="styles/modern/STYLE.md">Modern</a></strong><br><sub>Tech · lifestyle — Clean product-first layout and precise editorial motion.</sub><br><br><strong>Hook:</strong> “Satu cara lebih sederhana bekerja.”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/product-review/STYLE.md"><img alt="Product Review style illustration" src="assets/styles/product-review.svg" width="100%"></a><br><strong><a href="styles/product-review/STYLE.md">Product Review</a></strong><br><sub>Affiliate · genuine reviews — Real supplied product photo, demo and balanced verdict.</sub><br><br><strong>Hook:</strong> “Layak dibeli atau tidak?”</td><td width="50%" valign="top"><a href="styles/cartoon/STYLE.md"><img alt="Cartoon style illustration" src="assets/styles/cartoon.svg" width="100%"></a><br><strong><a href="styles/cartoon/STYLE.md">Cartoon</a></strong><br><sub>Education · family — Expressive 2D character acting and playful dynamics.</sub><br><br><strong>Hook:</strong> “Kok bisa begitu?”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/manga/STYLE.md"><img alt="Manga style illustration" src="assets/styles/manga.svg" width="100%"></a><br><strong><a href="styles/manga/STYLE.md">Manga</a></strong><br><sub>Action · storytelling — Ink panels, dramatic reveal and screentone.</sub><br><br><strong>Hook:</strong> “Satu detik sebelum berubah...”</td><td width="50%" valign="top"><a href="styles/pixel/STYLE.md"><img alt="Pixel style illustration" src="assets/styles/pixel.svg" width="100%"></a><br><strong><a href="styles/pixel/STYLE.md">Pixel</a></strong><br><sub>Retro · gaming — Pixel sprites, tile worlds and stepped motion.</sub><br><br><strong>Hook:</strong> “Kalau internet jadi game retro?”</td></tr>
+<tr><td width="50%" valign="top"><a href="styles/roblox/STYLE.md"><img alt="Roblox-Inspired Blocky 3D style illustration" src="assets/styles/roblox.svg" width="100%"></a><br><strong><a href="styles/roblox/STYLE.md">Roblox-Inspired Blocky 3D</a></strong><br><sub>Game · virtual worlds — Original blocky characters and modular world-building.</sub><br><br><strong>Hook:</strong> “Bisa bangun kota 30 detik?”</td><td width="50%" valign="top"><a href="styles/game/STYLE.md"><img alt="Game Motion style illustration" src="assets/styles/game.svg" width="100%"></a><br><strong><a href="styles/game/STYLE.md">Game Motion</a></strong><br><sub>Esports · explainers — Game HUD, camera action and clear mechanics.</sub><br><br><strong>Hook:</strong> “Kenapa strategi ini berhasil?”</td></tr>
+</table>
+
 [**Open all style definitions →**](styles/catalog.json) · [**Open animated style preview →**](styles/preview.html) · [**Read evidence & hook research →**](research/viral-styles-2026.md)
+
+## Default style selection and product photo rule
+
+**No style in the prompt?** Motion Story randomly chooses from the *contextually appropriate* styles in `styles/catalog.json`, records the choice in its working brief, and keeps the choice stable during the production. This is random style assignment, not random animation frames or a guarantee of virality. To force a style, explicitly say `style: manga`, `style: vintage`, or another catalog ID.
+
+**Product Review (or a review using Product X-Ray):** if the actual product image has **not** been supplied in the conversation or an accessible context, the agent **must ask for the product image before creating final motion/video visuals**. It must not invent the product's appearance or silently substitute an unrelated product. If the image is already supplied, do not ask again. The gallery art is illustrative only.
+
+Example no-style prompt:
+
+```text
+Buat video edukasi 30 detik tentang cara kerja internet, format 9:16.
+Saya tidak menentukan style — pilih secara acak dari gaya yang cocok,
+sebutkan style terpilih, lalu bangun HTML motion yang bukan slideshow.
+```
+
+Example missing-product-image prompt:
+
+```text
+Buat product review 30 detik untuk [NAMA PRODUK].
+Pakai style product-review. Jika foto produk belum tersedia,
+minta saya unggah foto produknya sebelum generate video final.
+```
 
 ## Workflow
 
@@ -159,6 +193,18 @@ then close with an honest buying takeaway and affiliate disclosure.
 **Blueprint Mechanism:** `Jelaskan cara kerja motor listrik 30 detik menggunakan blueprint-mechanism, perlihatkan komponen terurai dan jalur energi yang benar.`
 
 **Playful Doodle:** `Jelaskan siklus air untuk anak 30 detik style playful-doodle, ilustrasi ramah dengan panah digambar dan karakter yang bereaksi.`
+
+
+### New style prompt shortcuts
+
+- **Vintage:** `Gunakan style vintage untuk explainer sejarah 30 detik, transisi arsip dan anotasi tinta.`
+- **Modern:** `Gunakan style modern untuk opener aplikasi 20 detik, tipografi editorial dan transisi presisi.`
+- **Product Review:** `Gunakan style product-review untuk review gadget 30 detik; minta foto produk bila belum ada.`
+- **Cartoon:** `Gunakan style cartoon untuk edukasi sains dengan karakter original dan gerakan ekspresif.`
+- **Manga:** `Gunakan style manga untuk cerita 30 detik, panel sinematik dan ink reveal orisinal.`
+- **Pixel:** `Gunakan style pixel untuk penjelasan teknologi dalam dunia game retro 16-bit.`
+- **Roblox-inspired:** `Gunakan style roblox untuk cerita game dunia blocky original, tanpa memakai aset resmi.`
+- **Game:** `Gunakan style game untuk explainer strategi dengan HUD dinamis dan demonstrasi mekanik.`
 
 ## Getting better results
 
