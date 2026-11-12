@@ -1,0 +1,37 @@
+---
+name: motion-story
+description: Design and build original, narrative-driven browser motion graphics for educational explainers, social shorts, product storytelling, infographic sequences and kinetic typography. Use this skill when a user requests a motion-story video, motion graphics style, or short-form animated explainer.
+license: MIT
+---
+
+# Motion Story — Agent Skill
+
+Motion Story creates genuine time-based visual storytelling rather than a slideshow. Choose the visual identity from the topic and intended audience; Storyflow is an available original style, not an obligation for every project.
+
+## Start here
+1. Read `styles/storyflow/STYLE.md` when Storyflow is requested.
+2. Define audience, platform, aspect ratio, duration, narrative thesis and emotional tone. If omitted, default to a 30-second 9:16 educational short with no audio, without blocking implementation.
+3. Write a short beat sheet: **hook → curiosity → visual proof → reveal → takeaway**. Treat this as a narrative function, not a rigid scene template.
+4. Plan continuous subject identity: one object, connected graphic, or visual motif persists across transitions.
+5. Use the existing `styles/storyflow/demo.html` as the runnable demonstration and timing reference, never as an excuse to repeat the same arrangement across topics.
+
+## Quality gates
+- **No PowerPoint effect**: never present a static headline atop a static image, fade it out, then replace it with another static card. Move the visual world or transform the evidence itself.
+- Animate meaningful evidence: numbers, relationships, causal connections, or spatial comparisons.
+- Text is concise and legible at phone size. One primary headline and no more than one secondary world label at a time.
+- Every frame must be a deterministic function of timeline time: no unseeded randomness, wall clock, increment-per-render particles, or non-deterministic physics.
+- Maintain safe areas for mobile platforms and preserve contrast.
+- Render-preview opening, middle, closing, and transition moments and fix cropping or collisions.
+- Ensure a functioning pause, restart, debug scrub, and clean frame-capture mode.
+- Do not claim an MP4 exists unless a real MP4 was rendered and verified.
+
+## Storyflow requirements
+- Read the style guide for palette, type system, recurring motif and motion signatures.
+- Maintain an evolving connected graphic around the **signal orb**.
+- Use transitions motivated by the narrative: a connection line becomes a route; a number grows into a diagram; the orb pushes the virtual camera.
+- Original shapes and layout only; do not copy visual assets or starter files from other projects.
+
+## Suggested deliverables
+- Standalone browser implementation with a full time-based timeline.
+- A shot/beat script and optional voiceover script.
+- Duration, aspect ratio and exact render commands if exporting video.
