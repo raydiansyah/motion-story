@@ -1,12 +1,14 @@
 # Curiosity Lab
 
+![Curiosity Lab visual reference](../../assets/styles/curiosity-lab.svg)
+
 **Style ID:** `curiosity-lab`  
 **Status:** reference concept; prototype with the shared demo engine  
 **Niches:** science, facts, experiments  
 **Hook:** show-result-first
 
 ## Original visual system
-Palette: background `#F7F1DD` · primary `#283E4A` · accent `#E37E46` · type `#6AB9AC`.
+Palette: background `#F7F1DD` · primary `#283E4A` · accent `#E37E46` · secondary `#6AB9AC` · type `#283E4A`.
 
 Recurring motif: **two-experiment-vessels**. Motion grammar: split-screen test, liquid-like reveal, annotated evidence. Each beat must alter the underlying evidence rather than just fading to a new text card.
 

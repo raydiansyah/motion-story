@@ -1,5 +1,7 @@
 # Data Shock
 
+![Data Shock visual reference](../../assets/styles/data-shock.svg)
+
 **Style ID:** `data-shock`  
 **Status:** reference concept; prototype with the shared demo engine  
 **Niches:** statistics, economics, technology  

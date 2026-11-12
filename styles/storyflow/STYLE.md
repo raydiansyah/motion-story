@@ -1,5 +1,7 @@
 # Storyflow — Living Narrative Motion
 
+![Storyflow visual reference](../../assets/styles/storyflow.svg)
+
 **Style ID:** `storyflow`  
 **Version:** 1.0.0  
 **Format:** Canvas 2D, portrait-first, 1080 × 1920 stage  

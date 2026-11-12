@@ -1,12 +1,14 @@
 # Myth Breaker
 
+![Myth Breaker visual reference](../../assets/styles/myth-breaker.svg)
+
 **Style ID:** `myth-breaker`  
 **Status:** reference concept; prototype with the shared demo engine  
 **Niches:** digital-literacy, AI-misconceptions, consumer-education  
 **Hook:** belief-vs-evidence
 
 ## Original visual system
-Palette: background `#F3F6F5` · primary `#182D32` · accent `#EF654D` · type `#4AA69D`.
+Palette: background `#F3F6F5` · primary `#182D32` · accent `#EF654D` · secondary `#4AA69D` · type `#182D32`.
 
 Recurring motif: **split assumption and test**. Motion grammar: barrier-break with evidence layers. Each beat must alter the underlying evidence rather than just fading to a new text card.
 

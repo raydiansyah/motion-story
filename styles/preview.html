@@ -26,6 +26,16 @@ function dot(px,py,r,color){x.beginPath();x.arc(px,py,Math.max(.01,r),0,Math.PI*
 function text(s,px,py,size=70,color=chosen.fg,align="center"){x.fillStyle=color;x.textAlign=align;x.textBaseline="middle";x.font="900 "+size+"px system-ui, sans-serif";x.fillText(s,px,py)}
 function glow(px,py,r,color){const g=x.createRadialGradient(px,py,0,px,py,r);g.addColorStop(0,color+"58");g.addColorStop(1,color+"00");x.fillStyle=g;x.fillRect(px-r,py-r,2*r,2*r)}
 function roundrect(px,py,w,h,r,fill){x.fillStyle=fill;x.beginPath();x.roundRect(px,py,w,h,r);x.fill()}
+// --- Camera rig: shot size as a pure function of t (see docs/MOTION_GUIDE.md "Shot size") ---
+// keys: [time, scale, focusX, focusY]; wide=1, medium close-up ~1.2-1.3, close-up >=1.45 on this stage
+const SHOTS=[[0,1,540,960],[2,1,540,960],[5.5,1.45,540,1050],[8.5,1.45,540,1050],[10.5,1,540,960],[12,1,540,960]];
+const smooth=p=>{p=clamp(p);return p*p*(3-2*p)};
+function camAt(tt){let a=SHOTS[0],b=SHOTS[SHOTS.length-1];for(let i=0;i<SHOTS.length-1;i++)if(tt>=SHOTS[i][0]&&tt<=SHOTS[i+1][0]){a=SHOTS[i];b=SHOTS[i+1];break}const p=a===b?0:smooth((tt-a[0])/(b[0]-a[0]));return{s:a[1]+(b[1]-a[1])*p,fx:a[2]+(b[2]-a[2])*p,fy:a[3]+(b[3]-a[3])*p}}
+function applyCam(tt){const c=camAt(tt);x.translate(W/2,H/2);x.scale(c.s,c.s);x.translate(-c.fx,-c.fy)}
+// --- Footage layers: real <video> clips locked to the timeline clock (MOTION_GUIDE.md "Video as a footage layer") ---
+// Register clips as {el, o:{at, in, out, rate, hold}}; empty by default. Animate the wrapper, never the <video> itself.
+const clips=[];
+function syncClip(v,tt,o){const local=o["in"]+(tt-o.at)*(o.rate||1),active=tt>=o.at&&(o.hold||local<=o.out);v.style.visibility=active?"visible":"hidden";if(!active){v.pause();return}const target=Math.min(local,o.out);if(Math.abs(v.currentTime-target)>.04)v.currentTime=target;if(v.paused)v.play().catch(()=>{})}
 function bg(t){x.fillStyle=chosen.bg;x.fillRect(0,0,W,H);for(let i=0;i<45;i++){let xx=(i*317+57)%W,yy=(i*593+13)%H;dot(xx+Math.sin(t*.25+i)*12,yy,1.5+i%3,chosen.fg+"2a")}glow(540,900+Math.sin(t*.7)*40,700,chosen.a)}
 function title(t){let q=ease(t/.9),up=ease((t-2.4)/.7);x.save();x.globalAlpha=q*(1-up);let yy=390-40*q-120*up;text(chosen.hook[0],540,yy,108);text(chosen.hook[1],540,yy+124,112,chosen.a);x.restore()}
 function graphic(t){
@@ -40,7 +50,7 @@ if(chosen.type==="xray"){for(let i=0;i<4;i++){let off=(i-1.5)*125*open;roundrect
 dot(0,0,50+8*Math.sin(p),chosen.fg);for(let j=0;j<3;j++){x.beginPath();x.arc(0,0,90+((t*.65+j/3)%1)*95,0,Math.PI*2);x.strokeStyle=chosen.a+Math.round((1-((t*.65+j/3)%1))*.28*255).toString(16).padStart(2,"0");x.lineWidth=5;x.stroke()}
 x.restore()}
 function takeaway(t){let q=ease((t-6.3)/1),fade=ease((t-9.8)/.7);x.save();x.globalAlpha=q*(1-fade);text("CERITA ADA",540,1420-25*q,82,chosen.fg);text("DI BALIK DATA",540,1510-25*q,83,chosen.a);x.restore();let fin=ease((t-10)/1.1);if(fin){x.save();x.globalAlpha=fin;roundrect(145,680,790,430,52,chosen.a);text("MOTION",540,840,125,chosen.bg);text("STORY",540,985,130,chosen.bg);x.restore()}}
-function draw(time){const t=clamp(time,0,D);bg(t);graphic(t);title(t);takeaway(t);text(chosen.name.toUpperCase(),540,165,37,chosen.fg);line(190,216,890,216,chosen.a+"88",5);text(chosen.label,540,1740,37,chosen.fg);line(140,1823,140+800*t/D,1823,chosen.a,10)}
+function draw(time){const t=clamp(time,0,D);bg(t);for(const c of clips)syncClip(c.el,t,c.o);x.save();applyCam(t);graphic(t);x.restore();title(t);takeaway(t);text(chosen.name.toUpperCase(),540,165,37,chosen.fg);line(190,216,890,216,chosen.a+"88",5);text(chosen.label,540,1740,37,chosen.fg);line(140,1823,140+800*t/D,1823,chosen.a,10)}
 function frame(ms){if(!last)last=ms;if(running)t=(t+(ms-last)/1000)%D;last=ms;draw(t);document.querySelector("#seek").value=t;document.querySelector("#time").value=t.toFixed(2)+"s";requestAnimationFrame(frame)}
 const pause=document.querySelector("#pause");function update(){pause.textContent=running?"Pause":"Play"}
 pause.onclick=()=>{running=!running;update()};document.querySelector("#restart").onclick=()=>{t=0;running=!clean;update()};document.querySelector("#seek").oninput=e=>{t=Number(e.target.value);running=false;update();draw(t)};

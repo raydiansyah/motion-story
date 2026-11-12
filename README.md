@@ -271,7 +271,7 @@ Download or clone this repository and open [`styles/preview.html`](styles/previe
 | Slider | Scrub motion timeline |
 | `?style=storyflow&clean=1&t=4.2` | Freeze a deterministic reference frame |
 
-The existing browser preview is an **illustrative 12-second demo of the original six styles**; the five newly added styles currently have static SVG gallery references and instructions, not an integrated animated preview or MP4 exporter.
+The existing browser preview is an **illustrative 12-second demo of the original six styles**; the other thirteen styles currently have static SVG gallery references and instructions, not an integrated animated preview or MP4 exporter.
 
 ## FAQ
 
