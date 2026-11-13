@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.svg" width="120" alt="Motion Story logo">
+
 # Motion Story
 
 **An agent-ready library for motion graphics that tell a story — not a slideshow.**
