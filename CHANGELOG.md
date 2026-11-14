@@ -9,11 +9,15 @@ did not change the catalog.
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-11-14
+
 ### Added
 
 - **Chibi Explainer** style (`chibi-explainer`) — flat chibi presenter in a
-  layered scene with a work board, speech bubble, and area annotation chip.
-  In preparation; will ship as catalog 1.5.0 (37 styles).
+  layered scene with a work board, speech bubble, and area annotation chip,
+  taking the catalog from 36 to 37 styles. Reference scene: an original
+  coffee-shop ("kedai kopi") explainer frame.
+- This changelog, so future changes are easy to track.
 
 ## 2026-11-13 — Project logo
 

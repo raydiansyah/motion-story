@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "date": "2026-11-12",
+  "version": "1.5.0",
+  "date": "2026-11-13",
   "research": "research/viral-styles-2026.md",
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
   "styles": [
@@ -1012,6 +1012,34 @@
       "risk": "Keep every character original; never copy a copyrighted anime character, hairstyle or uniform exactly.",
       "image": "assets/styles/anime.svg",
       "guide": "styles/anime/STYLE.md"
+    },
+    {
+      "id": "chibi-explainer",
+      "name": "Chibi Explainer",
+      "niches": [
+        "business",
+        "education",
+        "process-explainers"
+      ],
+      "hook": "presenter-address",
+      "palette": [
+        "#FFF3D6",
+        "#1F2440",
+        "#FFC53D",
+        "#FF7A59"
+      ],
+      "motif": "chibi-presenter-layered-scene",
+      "motion": "presenter pops in with a speech bubble; board cards slide in one by one; background characters bob and work at their stations; slow camera push between annotated areas",
+      "sample": "Kenapa kopi susu di kedai rasanya beda?",
+      "beats": [
+        "presenter-hook",
+        "scene-tour",
+        "board-proof",
+        "takeaway"
+      ],
+      "risk": "Annotation chips must label real areas and steps; board cards and presenter claims stay factual — no invented metrics.",
+      "image": "assets/styles/chibi-explainer.svg",
+      "guide": "styles/chibi-explainer/STYLE.md"
     }
   ],
   "default_selection": {
