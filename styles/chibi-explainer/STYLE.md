@@ -40,6 +40,11 @@ Hook: "Kenapa kopi susu di kedai rasanya beda?"
 Gerak utama: presenter pops in with a speech bubble; board cards slide in one by one; background characters bob and work at their stations; slow camera push between annotated areas.
 Bangun satu dunia visual yang berkembang secara kontinu;
 perlihatkan objek, hubungan, atau bukti baru seiring narasi.
+Karakter yang berinteraksi dengan objek harus benar-benar melakukan
+gerakannya: lengan/tangan dibangun sebagai layer terpisah yang ikut
+bergerak mengikuti aksi (mis. menarik tuas = tangan menggenggam dan
+menarik bersama tuasnya), bukan gambar karakter diam di samping objek
+yang bergerak sendiri.
 Buat HTML standalone dengan timeline deterministik, pause,
 restart, scrub debug dan ?clean=1&t=4.2 untuk render frame.
 Sertakan naskah VO dan petunjuk render MP4.
@@ -52,6 +57,7 @@ Sertakan naskah VO dan petunjuk render MP4.
 - Maintain readable typography at mobile size and safe areas for UI overlays.
 - Annotation chips must label real areas and steps; board cards and presenter claims stay factual — no invented metrics.
 - Presenter expressions must match the narration beat; keep the presenter card inside the bottom safe area on every platform.
+- Character–object interaction must be performed, not implied: build each character's arms and hands as separate animated layers, so when a character acts on an object the limb visibly does the work — e.g. pulling a lever means the arm reaches out, the hand grips the handle, and both travel with the lever through the pull. Never animate the object alone next to a static full-body character image.
 - Retention improvement is a hypothesis; test against actual channel analytics.
 
 [All styles](../../README.md#style-gallery) · [Motion generation guide](../../docs/MOTION_GUIDE.md)
