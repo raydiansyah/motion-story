@@ -9,6 +9,18 @@ did not change the catalog.
 
 ## [Unreleased]
 
+## [Unreleased]
+
+### Added
+
+- README gallery entries for Medical Science Storytelling and Anatomy Atlas, with SVG keyframes and links to their 8-second interactive motion studies.
+- The browser Style Lab now includes a dedicated Medical Science scene alongside Anatomy Atlas.
+
+### Changed
+
+- Interactive Style Lab duration reduced from 12 to 8 seconds so each sample works as a compact 5–10 second style preview.
+- README now distinguishes static style images, interactive browser motion studies and rendered MP4 exports.
+
 ## [1.6.0] - 2026-11-22
 
 ### Added
