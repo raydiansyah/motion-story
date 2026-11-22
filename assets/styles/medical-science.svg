@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+<title id="title">Medical Science Storytelling — stomach protection</title>
+<desc id="desc">A cinematic educational illustration showing a simplified stomach cutaway and a magnified mucus barrier protecting the stomach lining.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071321"/><stop offset="1" stop-color="#10283A"/></linearGradient>
+  <linearGradient id="organ" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF916D"/><stop offset="1" stop-color="#B85D68"/></linearGradient>
+  <linearGradient id="mucus" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53E2D0" stop-opacity=".95"/><stop offset="1" stop-color="#53E2D0" stop-opacity=".25"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<circle cx="850" cy="470" r="280" fill="#53E2D0" opacity=".05"/>
+<text x="88" y="132" fill="#53E2D0" font-family="Arial,sans-serif" font-size="28" letter-spacing="7">MOTION STORY / MEDICAL SCIENCE</text>
+<text x="88" y="250" fill="#F5F1E8" font-family="Arial,sans-serif" font-size="72" font-weight="700">Lambung punya</text>
+<text x="88" y="338" fill="#F5F1E8" font-family="Arial,sans-serif" font-size="72" font-weight="700">pelindung alami.</text>
+<text x="88" y="402" fill="#A9C0CB" font-family="Arial,sans-serif" font-size="30">Bagaimana organ ini menghadapi lingkungan asam?</text>
+<!-- simplified stomach cutaway -->
+<path d="M470 590 C410 690 405 800 470 900 C540 1005 690 1005 780 900 C850 820 830 720 760 660 C710 620 670 600 670 520 L670 465 L590 465 L590 585 C550 570 510 570 470 590Z" fill="url(#organ)" stroke="#FFC1A8" stroke-width="10"/>
+<path d="M500 655 C455 730 468 815 520 875 C570 930 680 935 740 865 C790 805 770 735 710 690 C660 650 625 655 610 610" fill="none" stroke="#F5F1E8" stroke-width="12" opacity=".75"/>
+<path d="M545 735 C585 695 675 700 710 760" fill="none" stroke="#53E2D0" stroke-width="16" stroke-linecap="round" filter="url(#glow)"/>
+<circle cx="640" cy="795" r="14" fill="#53E2D0"/>
+<path d="M710 785 C790 790 825 830 850 885" fill="none" stroke="#53E2D0" stroke-width="5" stroke-dasharray="12 16"/>
+<circle cx="850" cy="885" r="12" fill="#53E2D0"/>
+<!-- magnification callout -->
+<circle cx="540" cy="1115" r="210" fill="#10283A" stroke="#53E2D0" stroke-width="7"/>
+<path d="M365 1080 Q450 1010 540 1080 T715 1080 L715 1185 Q630 1245 540 1185 T365 1185Z" fill="url(#mucus)"/>
+<path d="M365 1188 Q450 1120 540 1188 T715 1188 L715 1265 L365 1265Z" fill="#D98C91"/>
+<path d="M390 1050 Q455 1000 520 1040 M565 1040 Q630 1000 690 1050" fill="none" stroke="#FF916D" stroke-width="7" stroke-linecap="round"/>
+<g fill="#53E2D0" opacity=".9"><circle cx="430" cy="1035" r="9"/><circle cx="490" cy="1018" r="8"/><circle cx="610" cy="1018" r="8"/><circle cx="670" cy="1038" r="9"/></g>
+<text x="88" y="1405" fill="#53E2D0" font-family="Arial,sans-serif" font-size="26" letter-spacing="5">ZOOM IN / LAPIS PELINDUNG</text>
+<text x="88" y="1480" fill="#F5F1E8" font-family="Arial,sans-serif" font-size="46" font-weight="700">Mukus membantu melindungi</text>
+<text x="88" y="1540" fill="#F5F1E8" font-family="Arial,sans-serif" font-size="46" font-weight="700">permukaan lambung.</text>
+<text x="88" y="1625" fill="#A9C0CB" font-family="Arial,sans-serif" font-size="28">Ilustrasi sederhana — bukan gambaran anatomis skala asli.</text>
+<rect x="88" y="1715" width="904" height="2" fill="#365064"/>
+<text x="88" y="1780" fill="#53E2D0" font-family="Arial,sans-serif" font-size="24" letter-spacing="4">MECHANISM → UNDERSTANDING</text>
+<text x="88" y="1830" fill="#A9C0CB" font-family="Arial,sans-serif" font-size="22">Materi edukasi umum. Bukan diagnosis atau saran medis personal.</text>
+</svg>
