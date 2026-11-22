@@ -30,3 +30,13 @@ Recurring motif: **split assumption and test**. Motion grammar: barrier-break wi
 - Compare variants with the metrics in [research](../../research/viral-styles-2026.md); do not equate views with viewer satisfaction.
 
 [Open reference preview](../preview.html?style=myth-breaker) (open locally or through GitHub Pages after deployment).
+
+## Health-education adaptation
+
+Use for a **specific health misconception** where evidence supports a nuanced correction. Structure the split-screen as claim → evidence → limits → practical interpretation, not a simplistic red/green true/false verdict.
+
+- State exactly which version of the claim is being evaluated.
+- Prefer current public-health agencies, professional medical societies, systematic reviews and clinical guidelines.
+- Show uncertainty, population differences and exceptions when material.
+- Avoid shame, fear, miracle-cure language or implying that a general myth-check diagnoses the viewer.
+- Medication, treatment, pregnancy, child-health and urgent-symptom topics require qualified clinical review before publication.
