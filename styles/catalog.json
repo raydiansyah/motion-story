@@ -1,9 +1,40 @@
 {
-  "version": "1.5.0",
-  "date": "2026-11-13",
+  "version": "1.6.0",
+  "date": "2026-11-22",
   "research": "research/viral-styles-2026.md",
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
   "styles": [
+    {
+      "id": "anatomy-atlas",
+      "name": "Anatomy Atlas",
+      "niches": [
+        "anatomy",
+        "physiology",
+        "health education",
+        "classroom science"
+      ],
+      "hook": "body-region-to-structure",
+      "palette": [
+        "#F3F0E7",
+        "#172A35",
+        "#D75C59",
+        "#3E90A4",
+        "#D6A64B"
+      ],
+      "motif": "anatomical-cutaway-numbered-callouts-flow-path",
+      "motion": "body orientation, organ isolation, measured layer reveal, tracked labels and verified pathway",
+      "sample": "Bagaimana darah mengalir melalui jantung?",
+      "beats": [
+        "orientation",
+        "structure",
+        "pathway",
+        "relationship",
+        "recap"
+      ],
+      "risk": "Use authoritative anatomy references; bundled SVGs are simplified primitives, not diagnostic or to-scale illustrations. Require qualified review for clinical guidance.",
+      "image": "assets/styles/anatomy-atlas.svg",
+      "guide": "styles/anatomy-atlas/STYLE.md"
+    },
     {
       "id": "medical-science",
       "name": "Medical Science Storytelling",
@@ -11,7 +42,8 @@
         "health education",
         "anatomy",
         "physiology",
-        "science communication"
+        "science communication",
+        "public health explainers"
       ],
       "hook": "body-mechanism-reveal",
       "palette": [
@@ -21,7 +53,7 @@
         "#F5F1E8"
       ],
       "motif": "anatomical-cutaway-to-evidence-path",
-      "motion": "human-to-organ-to-tissue scale journey, path-to-proof, layered tissue reveal",
+      "motion": "continuous scale journey from person to organ to tissue, camera push-in, mechanism tracer, layer reveal and evidence-linked takeaway",
       "sample": "Bagaimana lambung melindungi dirinya dari asam?",
       "beats": [
         "curiosity hook",
@@ -30,7 +62,7 @@
         "meaning",
         "health-literacy takeaway"
       ],
-      "risk": "Use reputable sources; label simplified anatomy; never diagnose or prescribe; require qualified review for diagnosis, medication or treatment claims.",
+      "risk": "Every health claim requires a reputable source; label simplified anatomy; no diagnosis or individualized treatment; qualified review for diagnosis, medication, treatment and red-flag content.",
       "image": "assets/styles/medical-science.svg",
       "guide": "styles/medical-science/STYLE.md"
     },
