@@ -9,6 +9,25 @@ did not change the catalog.
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-11-22
+
+### Added
+
+- **Anatomy Atlas** (`anatomy-atlas`) — a label-led anatomy and physiology style, distinct from cinematic Medical Science Storytelling.
+- Reusable simplified SVG anatomy primitives for stomach, heart, lungs, brain, blood-vessel cross-section and cell.
+- Medical Science System guide defining source, accuracy, review, camera, scene-layer and style-selection gates.
+
+### Changed
+
+- Medical Science Storytelling metadata expanded for public-health and physiology explainers.
+- Nine existing style guides now include health-topic suitability and safety boundaries, so style selection follows the communication task.
+- Interactive preview now includes Anatomy Atlas as a seventh style; Medical Science Storytelling retains its standalone HTML example.
+- Catalog corrected to 39 styles and version 1.6.0.
+
+### Fixed
+
+- README style-count badges and preview coverage statements aligned with the catalog and actual preview implementation.
+
 ## [1.5.0] - 2026-11-14
 
 ### Added
