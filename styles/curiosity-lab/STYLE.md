@@ -30,3 +30,12 @@ Recurring motif: **two-experiment-vessels**. Motion grammar: split-screen test, 
 - Compare variants with the metrics in [research](../../research/viral-styles-2026.md); do not equate views with viewer satisfaction.
 
 [Open reference preview](../preview.html?style=curiosity-lab) (open locally or through GitHub Pages after deployment).
+
+## Health-education adaptation
+
+Use Curiosity Lab only when the story genuinely depends on a **testable comparison**: for example, a controlled demonstration of handwashing coverage or how a physical condition changes a simple outcome. It is not the default style for internal anatomy or clinical claims.
+
+- State the question, the variable changed, the control condition and what was measured.
+- Never stage a fabricated experiment as real footage or imply a classroom demonstration proves a clinical outcome.
+- Explain confounders and limits; distinguish a demonstration from peer-reviewed evidence.
+- For body mechanisms without an experiment, prefer `medical-science` or `anatomy-atlas`.
