@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medical Science Storytelling — Motion Story Demo</title>
+<style>
+:root{--bg:#071321;--ink:#f5f1e8;--cyan:#53e2d0;--coral:#ff916d;--rose:#d98c91;--muted:#a9c0cb}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#030a12;color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,sans-serif;display:grid;place-items:center;padding:24px}
+.wrap{width:min(100%,520px)}.meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}
+.stage{position:relative;aspect-ratio:9/16;overflow:hidden;border:1px solid #284155;border-radius:22px;background:radial-gradient(circle at 78% 25%,#15374a 0,transparent 38%),linear-gradient(150deg,#071321,#10283a);box-shadow:0 24px 80px #0009}
+.noise{position:absolute;inset:0;opacity:.12;background-image:radial-gradient(#fff 0.6px,transparent .6px);background-size:5px 5px;pointer-events:none}
+.kicker{position:absolute;left:8%;top:7%;color:var(--cyan);font-size:clamp(8px,2vw,11px);letter-spacing:.2em;font-weight:700}
+.head{position:absolute;left:8%;right:8%;top:13%;font-size:clamp(25px,6.8vw,39px);line-height:1.04;font-weight:800;letter-spacing:-.04em;z-index:2}
+.sub{position:absolute;left:8%;right:8%;top:27%;font-size:clamp(10px,2.7vw,14px);color:var(--muted);z-index:2}
+.organ{position:absolute;width:54%;height:34%;left:23%;top:37%;transform:scale(var(--organ-scale,.82));opacity:var(--organ-opacity,.9);transition:none}
+.organ path.main{fill:url(#organFill);stroke:#ffc1a8;stroke-width:7}
+.organ path.inner{fill:none;stroke:#f5f1e8;stroke-width:7;opacity:.72}
+.flow{fill:none;stroke:var(--cyan);stroke-width:9;stroke-linecap:round;stroke-dasharray:180;stroke-dashoffset:calc(180 - var(--flow,0)*180);filter:drop-shadow(0 0 9px #53e2d0)}
+.zoom{position:absolute;width:49%;aspect-ratio:1;border:2px solid var(--cyan);border-radius:50%;left:25.5%;top:53%;background:#10283a;overflow:hidden;opacity:var(--zoom-opacity,0);transform:scale(var(--zoom-scale,.65));}
+.mucus{position:absolute;left:0;right:0;top:39%;height:26%;background:linear-gradient(#53e2d0,#53e2d055);border-radius:48% 48% 0 0}
+.tissue{position:absolute;left:0;right:0;top:65%;height:35%;background:var(--rose)}
+.droplet{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--coral);top:20%;box-shadow:0 0 12px var(--coral)}
+.d1{left:23%}.d2{left:49%;top:13%}.d3{left:72%;top:22%}
+.label{position:absolute;left:8%;right:8%;bottom:18%;font-size:clamp(16px,4.1vw,23px);font-weight:750;line-height:1.2;opacity:var(--label-opacity,0);transform:translateY(calc((1 - var(--label-opacity,0))*12px))}
+.note{position:absolute;left:8%;right:8%;bottom:8%;font-size:clamp(9px,2.2vw,11px);color:var(--muted)}
+.path{position:absolute;left:72%;top:53%;width:18%;height:2px;background:var(--cyan);transform:rotate(35deg);transform-origin:left;opacity:var(--zoom-opacity,0)}
+.controls{display:flex;align-items:center;gap:12px;margin-top:14px}.controls button{border:1px solid #355166;background:#10283a;color:var(--ink);padding:9px 14px;border-radius:9px;font:inherit;cursor:pointer}.controls input{flex:1;accent-color:var(--cyan)}.time{min-width:72px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.caption{margin:14px 2px 0;color:var(--muted);font-size:12px}.caption b{color:var(--cyan)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body><main class="wrap">
+<div class="meta"><span>Motion Story / Style Preview</span><span>Medical Science</span></div>
+<section class="stage" id="stage" aria-label="Animasi edukasi mekanisme perlindungan lambung">
+<div class="kicker">BIOLOGY / EXPLAINED</div>
+<div class="head" id="head">Lambung punya<br>pelindung alami.</div>
+<div class="sub" id="sub">Bagaimana organ ini menghadapi lingkungan asam?</div>
+<svg class="organ" viewBox="0 0 300 360" aria-hidden="true">
+<defs><linearGradient id="organFill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff916d"/><stop offset="1" stop-color="#b85d68"/></linearGradient></defs>
+<path class="main" d="M110 45 L110 4 L165 4 L165 68 Q220 70 248 128 Q275 195 220 255 Q166 315 88 263 Q22 218 44 139 Q58 88 110 83Z"/>
+<path class="inner" d="M82 124 Q54 192 105 232 Q155 271 203 224 Q245 182 202 132"/>
+<path class="flow" d="M90 147 Q142 105 192 155 Q212 176 185 201" />
+</svg>
+<div class="path"></div>
+<div class="zoom" aria-hidden="true"><div class="droplet d1"></div><div class="droplet d2"></div><div class="droplet d3"></div><div class="mucus"></div><div class="tissue"></div></div>
+<div class="label" id="label">Lapisan mukus membantu melindungi permukaan lambung.</div>
+<div class="note" id="note">Ilustrasi sederhana • bukan gambaran anatomis skala asli</div>
+<div class="noise"></div>
+</section>
+<div class="controls"><button id="play" type="button">Pause</button><input id="scrub" type="range" min="0" max="30" step=".05" value="0" aria-label="Scrub timeline"><span class="time" id="time">0.0 / 30s</span></div>
+<p class="caption"><b>Demo konsep:</b> timeline deterministik, satu dunia visual, perjalanan kamera dari organ ke lapisan jaringan. Bukan diagnosis atau saran medis.</p>
+</main>
+<script>
+(()=>{const stage=document.querySelector('#stage'),scrub=document.querySelector('#scrub'),timeEl=document.querySelector('#time'),play=document.querySelector('#play'),head=document.querySelector('#head'),sub=document.querySelector('#sub'),label=document.querySelector('#label'),note=document.querySelector('#note');let t=0,playing=true,last=0,raf=0;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));const ease=v=>{v=clamp(v,0,1);return v*v*(3-2*v)};
+function render(sec){t=clamp(sec,0,30);const organ=ease((t-1)/5),zoom=ease((t-8)/5),labels=ease((t-13)/3),out=ease((t-24)/3);
+stage.style.setProperty('--organ-scale',(0.82+organ*.28-zoom*.12).toFixed(3));stage.style.setProperty('--organ-opacity',(1-out*.22).toFixed(3));stage.style.setProperty('--flow',ease((t-4)/5).toFixed(3));stage.style.setProperty('--zoom-opacity',zoom.toFixed(3));stage.style.setProperty('--zoom-scale',(0.65+zoom*.35).toFixed(3));stage.style.setProperty('--label-opacity',labels.toFixed(3));
+if(t<7){head.innerHTML='Lambung punya<br>pelindung alami.';sub.textContent='Organ ini bekerja di lingkungan yang sangat asam.';label.textContent='Mari lihat bagaimana permukaannya terlindungi.';note.textContent='ORIENTASI / ORGAN';}
+else if(t<14){head.innerHTML='Lihat lebih<br>dekat.';sub.textContent='Kita masuk ke permukaan bagian dalam lambung.';label.textContent='Permukaan lambung memiliki lapisan mukosa.';note.textContent='MAGNIFICATION / MUKOSA';}
+else if(t<24){head.innerHTML='Ada lapisan<br>yang membantu.';sub.textContent='Mukus dan mekanisme pertahanan lain membantu melindungi jaringan.';label.textContent='Lapisan mukus membantu melindungi permukaan lambung.';note.textContent='MECHANISM / MODEL SEDERHANA';}
+else{head.innerHTML='Sains membantu<br>kita memahami.';sub.textContent='Satu mekanisme — bukan penjelasan untuk semua keluhan.';label.textContent='Ilustrasi edukasi, bukan alat diagnosis.';note.textContent='TAKEAWAY / HEALTH LITERACY';}
+scrub.value=t;timeEl.textContent=t.toFixed(1)+' / 30s';}
+function frame(now){if(!playing)return;if(last)render(t+(now-last)/1000);last=now;if(t>=30){playing=false;play.textContent='Play';last=0;return;}raf=requestAnimationFrame(frame)}
+play.addEventListener('click',()=>{playing=!playing;play.textContent=playing?'Pause':'Play';last=0;if(playing)raf=requestAnimationFrame(frame);else cancelAnimationFrame(raf)});
+scrub.addEventListener('input',e=>{render(Number(e.target.value));if(playing){last=0;}});
+render(0);raf=requestAnimationFrame(frame);
+})();
+</script>
+</body></html>

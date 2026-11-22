@@ -61,3 +61,12 @@ Sertakan naskah VO dan petunjuk render MP4.
 - Retention improvement is a hypothesis; test against actual channel analytics.
 
 [All styles](../../README.md#style-gallery) · [Motion generation guide](../../docs/MOTION_GUIDE.md)
+
+## Health-education adaptation
+
+Use Chibi Explainer for **family- and child-facing health literacy**, such as explaining a clinic visit, handwashing routine, dental hygiene or a simple healthy habit. It is not the default for complex medical mechanisms.
+
+- Keep the presenter reassuring and age-appropriate; never frighten or shame a child.
+- Demonstrate real steps accurately and avoid invented clinical claims on the work board.
+- Do not depict a chibi character as a clinician or claim medical authority.
+- For anatomy, show a clearly labeled simplified illustration and link the mechanism to `medical-science` or `anatomy-atlas`.

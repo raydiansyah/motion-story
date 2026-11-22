@@ -30,3 +30,13 @@ Recurring motif: **large-number-as-physical-scale**. Motion grammar: numeric mor
 - Compare variants with the metrics in [research](../../research/viral-styles-2026.md); do not equate views with viewer satisfaction.
 
 [Open reference preview](../preview.html?style=data-shock) (open locally or through GitHub Pages after deployment).
+
+## Health-education adaptation
+
+Use only for **population-level health statistics** or sourced comparisons where the number is the explanatory subject. Never use shock value to exaggerate disease risk.
+
+- Display numerator, denominator, population, geography, time period and unit where relevant.
+- Prefer absolute risk and natural frequencies; add a baseline comparison when it changes interpretation.
+- Distinguish incidence, prevalence, mortality, relative risk and odds; do not interchange them.
+- Cite the original dataset or authoritative report and its date on screen or in end credits.
+- Never convert a population statistic into an individual's personal risk estimate.

@@ -52,3 +52,9 @@ Sertakan naskah VO dan petunjuk render MP4.
 - Retention improvement is a hypothesis; test against actual channel analytics.
 
 [All styles](../../README.md#style-gallery) · [Motion generation guide](../../docs/MOTION_GUIDE.md)
+
+## Health-education boundary
+
+Blueprint Mechanism is designed for engineered objects and mechanical assemblies, **not human anatomy**. Its exploded-part visual metaphor can falsely imply that organs are detachable machine components or that physiology is purely mechanical.
+
+For medical topics, use it only for an explicitly mechanical medical device (for example, a non-invasive device mechanism) and only with verified product/device documentation. Do not use it for organ cutaways, surgery, diagnosis, clinical procedures or biological pathways. Prefer `medical-science` or `anatomy-atlas` for the human body.

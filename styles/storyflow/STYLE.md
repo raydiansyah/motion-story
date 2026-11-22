@@ -62,3 +62,12 @@ This is a *demo only*, not a fixed script for future videos.
 
 ## QA
 Capture frames at 0, 1.5, 3.6, 5.9, 7.5, 9.5 and 11.5 seconds. Inspect type bounds, animation coherence, signal continuity and contrast. For exact frame parity, compare screenshots from the same timestamp across independent browser reloads.
+
+## Health-education adaptation
+
+Storyflow is appropriate when the health topic is primarily a **process or causal pathway** (for example, how a nerve signal travels or how breathing exchanges gases). Keep the signal-orb metaphor abstract: it represents the explanatory focus, not a literal cell, molecule, organ or medical measurement. For anatomical cutaways or detailed labels, hand off to `medical-science` or `anatomy-atlas` rather than forcing the network metaphor.
+
+- Keep one verified pathway visible from origin to destination.
+- Distinguish conceptual arrows from measured physiological quantities.
+- Cite the source for each mechanism; do not invent numerical values.
+- Do not imply the simplified network is a literal medical scan or full biological model.

@@ -43,3 +43,12 @@ Original characters and consistent designs.
 Use mobile-safe sizes, original art, deterministic time sampling, and a coherent visual world. The style is a creative reference, not a prediction of virality.
 
 [All styles](../../README.md#style-gallery) · [Motion guide](../../docs/MOTION_GUIDE.md)
+
+## Health-education adaptation
+
+Use original characters to explain **everyday health literacy**: hygiene, sleep routines, hydration concepts, basic body awareness or how to prepare questions for a clinician. Keep the acting warm and non-stigmatizing.
+
+- The character demonstrates the behavior; do not let gestures imply unsupported treatment efficacy.
+- Do not anthropomorphize pathogens or organs in a way that creates a false mechanism.
+- Avoid body-shaming, blame, panic and ridicule of people with illness or disability.
+- For anatomy and physiology, pair character acting with verified labels and a mechanism visual; use `medical-science` for the main explanation.

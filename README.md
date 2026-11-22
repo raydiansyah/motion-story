@@ -8,7 +8,7 @@
 
 Educational shorts · visual explainers · data storytelling · product demos · kinetic typography
 
-[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-36-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-6848ed)](SKILL.md) [![Styles](https://img.shields.io/badge/styles-39-08a89a)](styles/catalog.json) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **[Style gallery](#style-gallery) · [Workflow](#workflow) · [Example prompts](#example-prompts) · [Multi-agent setup](#multi-agent-setup) · [Install & use](#install--use) · [FAQ](#faq)**
 
@@ -32,7 +32,7 @@ Most automatic motion graphics are slides with transitions: headline appears, fa
 
 ## Style gallery
 
-**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **36 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
+**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **39 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
 
 <table>
 <tr>
@@ -297,7 +297,7 @@ Download or clone this repository and open [`styles/preview.html`](styles/previe
 | Slider | Scrub motion timeline |
 | `?style=storyflow&clean=1&t=4.2` | Freeze a deterministic reference frame |
 
-The existing browser preview is an **illustrative 12-second demo of the original six styles**; the other thirty styles currently have static SVG gallery references and instructions, not an integrated animated preview or MP4 exporter.
+The existing browser preview is an **illustrative 12-second demo of seven styles (the original six plus Anatomy Atlas)**; the other 32 styles have static SVG gallery references and guides; Medical Science Storytelling also has its own standalone 30-second HTML demo. This repository does not yet provide a general MP4 exporter.
 
 ## FAQ
 
@@ -318,3 +318,26 @@ The existing browser preview is an **illustrative 12-second demo of the original
 Research and sources: [Exa + Firecrawl report](research/viral-styles-2026.md).  
 Machine-readable styles: [`styles/catalog.json`](styles/catalog.json).  
 License: [MIT](LICENSE).
+
+
+## Medical Science Storytelling
+
+A health-education style for anatomy, physiology and evidence-led explainers. It moves from human scale to organ scale to the relevant tissue mechanism, with a connected evidence path, concise labels and explicit medical-safety rules.
+
+- [Style guide](styles/medical-science/STYLE.md)
+- [Key visual](assets/styles/medical-science.svg)
+- [Animated 30-second HTML demo](examples/medical-science-storytelling.html)
+
+The demo is a browser preview, not an MP4 export. It uses a simplified stomach-protection concept and is not a diagnostic image or medical advice.
+
+
+## Health education style system
+
+Motion Story now has two complementary, medically safety-gated styles:
+
+- **[Medical Science Storytelling](styles/medical-science/STYLE.md)** — cinematic, question-led explainers that move from person to organ to tissue and reveal a biological mechanism.
+- **[Anatomy Atlas](styles/anatomy-atlas/STYLE.md)** — calm, precise, label-led anatomy and physiology education, with orientation, callouts and pathway tracing.
+
+Reusable simplified anatomy SVG primitives are available in [`assets/anatomy/`](assets/anatomy/). These are motion-design starting points, not clinically validated or diagnostic images. Read the [Medical Science System guide](docs/MEDICAL_SCIENCE_SYSTEM.md) before using them.
+
+For health topics, existing styles have also received targeted selection and safety guidance: Storyflow, Curiosity Lab, Myth Breaker, Data Shock, Cartoon, Flat Vector, Chibi Explainer, Blueprint Mechanism and Playful Doodle. Choose by the communication task; do not force all health content into one visual treatment.

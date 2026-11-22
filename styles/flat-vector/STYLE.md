@@ -52,3 +52,12 @@ Sertakan naskah VO dan petunjuk render MP4.
 - Retention improvement is a hypothesis; test against actual channel analytics.
 
 [All styles](../../README.md#style-gallery) · [Motion generation guide](../../docs/MOTION_GUIDE.md)
+
+## Health-education adaptation
+
+Use Flat Vector for **simple prevention actions, service navigation and behavior steps** where the sequence is more important than anatomical detail.
+
+- Show the actual action in the correct order and avoid implying it guarantees prevention.
+- For medication, dosage, clinical triage or treatment instructions, require a qualified source and review.
+- Use accessible iconography and text; never communicate a safety-critical instruction by color alone.
+- For physiology or internal anatomy, select `medical-science` or `anatomy-atlas`.
