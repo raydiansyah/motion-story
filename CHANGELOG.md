@@ -9,8 +9,6 @@ did not change the catalog.
 
 ## [Unreleased]
 
-## [Unreleased]
-
 ### Added
 
 - README gallery entries for Medical Science Storytelling and Anatomy Atlas, with SVG keyframes and links to their 8-second interactive motion studies.
