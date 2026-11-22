@@ -32,7 +32,7 @@ Most automatic motion graphics are slides with transitions: headline appears, fa
 
 ## Style gallery
 
-**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **39 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 12-second reference; future production prompts should build a new story rather than simply animate these static images.
+**The pictures below are static concept/keyframes, not finished videos.** The library currently includes **39 named styles**. Click a card's style guide for its visual vocabulary. The animated [browser preview](styles/preview.html) is an independent 8-second motion study; future production prompts should build a new story rather than simply animate these static images.
 
 <table>
 <tr>
