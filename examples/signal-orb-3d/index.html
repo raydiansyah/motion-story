@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signal Orb — Motion Story 3D</title>
+    <link rel="stylesheet" href="../../engine/film.css" />
+    <link rel="stylesheet" href="film.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "../../node_modules/three/build/three.module.min.js",
+          "three/addons/": "../../node_modules/three/examples/jsm/",
+          "gsap": "../../node_modules/gsap/index.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <canvas class="space" id="space"></canvas>
+      <!-- screen layer: one scene per beat; text arrives after the camera, outside the 3D rig -->
+      <section class="scene" id="hook">
+        <div class="safe top"><p class="kicker">Signal</p><h1 class="display huge" id="hookTitle">One message starts as one pulse.</h1></div>
+      </section>
+      <section class="scene" id="split">
+        <div class="safe top"><p class="kicker">Curiosity</p><h2 class="display big" id="splitTitle">Then it <em class="key">splits</em> across the network.</h2></div>
+      </section>
+      <section class="scene" id="proof">
+        <div class="safe bottom">
+          <p class="kicker">Evidence · illustrative demo data</p>
+          <div class="readout"><span id="ms">0</span><small>ms to node 03</small></div>
+        </div>
+      </section>
+      <section class="scene" id="reveal">
+        <div class="safe top"><p class="kicker">Takeaway</p><h2 class="display big" id="revealTitle">Every path <em class="key">rebuilds</em> the same signal.</h2></div>
+      </section>
+    </div>
+    <script type="module" src="film.js"></script>
+  </body>
+</html>

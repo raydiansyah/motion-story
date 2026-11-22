@@ -45,10 +45,10 @@ repo=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 [ "$dest" != "$repo" ] || { echo "Refusing to overwrite source repository." >&2; exit 1; }
 if [ -e "$dest" ] && [ ! -d "$dest" ]; then echo "Target exists and is not a directory: $dest" >&2; exit 1; fi
 mkdir -p "$dest"
-for file in SKILL.md README.md LICENSE; do
+for file in SKILL.md README.md LICENSE package.json; do
   if [ -f "$repo/$file" ]; then cp "$repo/$file" "$dest/$file"; fi
 done
-for dir in styles research docs assets agents; do
+for dir in styles research docs assets agents engine examples; do
   if [ -d "$repo/$dir" ]; then
     mkdir -p "$dest/$dir"
     cp -R "$repo/$dir/." "$dest/$dir/"

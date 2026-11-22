@@ -1,0 +1,2 @@
+/* This story's own pieces, on top of engine/film.css. */
+#root { --bg: radial-gradient(120% 80% at 50% 38%, #0f1536 0%, #05060d 70%); background: var(--bg); }

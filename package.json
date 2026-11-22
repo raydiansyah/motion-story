@@ -1,0 +1,17 @@
+{
+  "name": "motion-story",
+  "private": true,
+  "type": "module",
+  "description": "Motion Story skill with an optional deterministic three.js engine for 3D motion graphics.",
+  "scripts": {
+    "engine:test": "node engine/tools/selftest.mjs",
+    "render": "node engine/tools/render.mjs",
+    "serve": "node engine/tools/render.mjs --serve"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "three": "0.170.0"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

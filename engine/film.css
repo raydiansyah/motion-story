@@ -1,0 +1,32 @@
+/* Base styles for a Motion Story 3D page. A story's own film.css sits on top of this. */
+:root { --ink: #f4f6ff; --muted: #9aa4c7; --accent: #6ae3ff; --bg: #05060d; }
+html, body { margin: 0; height: 100%; background: #000; color: var(--ink); overflow: hidden; font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; }
+#root { position: relative; transform-origin: top left; overflow: hidden; background: var(--bg); margin: 0 auto; }
+html[data-capture] body { overflow: hidden; }
+html[data-capture] #root { transform: none; margin: 0; }
+#root canvas.space { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+/* screen layer: captions and labels live here, outside the 3D camera, so they never move with it */
+.scene { position: absolute; inset: 0; visibility: hidden; pointer-events: none; }
+.safe { position: absolute; inset: 9% 7% 14% 7%; display: flex; flex-direction: column; }
+.safe.top { justify-content: flex-start; }
+.safe.bottom { justify-content: flex-end; }
+.display { font-weight: 800; letter-spacing: -0.02em; line-height: 1.04; margin: 0; text-wrap: balance; }
+.display.huge { font-size: 112px; }
+.display.big { font-size: 84px; }
+.kicker { font-size: 34px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 0 0 22px; }
+.sub { font-size: 40px; color: var(--muted); line-height: 1.3; margin: 26px 0 0; }
+.key { color: var(--accent); font-style: normal; }
+.ch { display: inline-block; }
+.readout { font-variant-numeric: tabular-nums; font-weight: 800; font-size: 150px; letter-spacing: -0.03em; }
+.readout small { font-size: 52px; font-weight: 600; color: var(--muted); margin-left: 12px; }
+/* pins: labels attached to a 3D point */
+.pins3d { position: absolute; left: 0; top: 0; pointer-events: none; }
+.pin3d { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 34px; font-weight: 600; padding: 12px 22px; border-radius: 14px; background: rgba(8, 12, 30, 0.72); border: 2px solid rgba(106, 227, 255, 0.55); backdrop-filter: blur(6px); }
+.pin3d-line { fill: none; stroke: rgba(106, 227, 255, 0.85); stroke-width: 3; }
+.pin3d-dot { fill: var(--accent); }
+/* playback controls: debug and review only, removed in ?capture */
+.story-controls { position: fixed; left: 0; right: 0; bottom: 0; height: 56px; display: flex; align-items: center; gap: 12px; padding: 0 16px; background: #0b0d1a; color: #cfd6f5; font: 14px system-ui, sans-serif; z-index: 10; }
+.story-controls input { flex: 1; }
+.story-controls button { background: #1b2040; color: inherit; border: 1px solid #2c3366; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.story-controls output { min-width: 120px; text-align: right; font-variant-numeric: tabular-nums; }
+html[data-capture] .story-controls { display: none; }

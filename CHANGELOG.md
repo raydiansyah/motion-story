@@ -11,6 +11,8 @@ did not change the catalog.
 
 ### Added
 
+- Optional deterministic **three.js 3D engine** (`engine/`): paused GSAP timeline, seekable WebGL stage with directed camera, pins and seeded randomness, headless stills/MP4 renderer with post-encode probing, and a determinism self-test (`npm run engine:test`). Architecture studied from zeative/motion-educator; implementation is original.
+- `examples/signal-orb-3d/`: a 10-second 9:16 Storyflow-style story in real 3D, and `docs/THREE_ENGINE.md`.
 - README gallery entries for Medical Science Storytelling and Anatomy Atlas, with SVG keyframes and links to their 8-second interactive motion studies.
 - The browser Style Lab now includes a dedicated Medical Science scene alongside Anatomy Atlas.
 

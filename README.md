@@ -345,6 +345,9 @@ Machine-readable styles: [`styles/catalog.json`](styles/catalog.json).
 License: [MIT](LICENSE).
 
 
+## 3D engine (three.js)
+Stories that need real depth can use the optional engine in [`engine/`](engine/): `npm install`, then `npm run serve -- examples/signal-orb-3d` to watch the reference story, `npm run engine:test` to verify frames are deterministic, and `node engine/tools/render.mjs examples/signal-orb-3d` to render and probe an MP4. Full guide: [docs/THREE_ENGINE.md](docs/THREE_ENGINE.md).
+
 ## Medical Science Storytelling
 
 A health-education style for anatomy, physiology and evidence-led explainers. It moves from human scale to organ scale to the relevant tissue mechanism, with a connected evidence path, concise labels and explicit medical-safety rules.

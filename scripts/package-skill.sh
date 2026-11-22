@@ -7,10 +7,10 @@ command -v zip >/dev/null 2>&1 || { echo "Install the zip command first." >&2; e
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT HUP INT TERM
 mkdir -p "$tmp/motion-story"
-for f in SKILL.md README.md LICENSE; do
+for f in SKILL.md README.md LICENSE package.json; do
   [ ! -f "$repo/$f" ] || cp "$repo/$f" "$tmp/motion-story/$f"
 done
-for dir in agents assets docs research styles; do
+for dir in agents assets docs engine examples research styles; do
   [ ! -d "$repo/$dir" ] || cp -R "$repo/$dir" "$tmp/motion-story/$dir"
 done
 mkdir -p "$repo/dist"

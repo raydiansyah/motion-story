@@ -35,6 +35,9 @@ If the user wants a Product Review (or a product-specific review using Product X
 - Use transitions motivated by the narrative and the chosen style; do not impose Storyflow's orb or connections on other visual systems.
 - Original shapes and layout only; do not copy visual assets or starter files from other projects.
 
+## 3D engine (optional)
+When the topic needs real depth (a hero object, a directed camera, an X-ray or mechanism that transforms), use the three.js engine in `engine/` instead of faking 3D in 2D. Read `docs/THREE_ENGINE.md`, copy `examples/signal-orb-3d/` as the starting point, and run `npm install` first (three.js is not assumed to be installed). 3D must obey the same determinism gate: draw only via `space.render(t)`, seed all randomness with `rng()`, no accumulated state. Verify with `npm run engine:test`, review stills from `engine/tools/render.mjs --stills`, and only claim an MP4 after the renderer's probe line confirms it. Flat 2D styles do not need it.
+
 ## Suggested deliverables
 - Standalone browser implementation with a full time-based timeline.
 - A shot/beat script and optional voiceover script.
