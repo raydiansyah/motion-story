@@ -318,3 +318,14 @@ The existing browser preview is an **illustrative 12-second demo of the original
 Research and sources: [Exa + Firecrawl report](research/viral-styles-2026.md).  
 Machine-readable styles: [`styles/catalog.json`](styles/catalog.json).  
 License: [MIT](LICENSE).
+
+
+## Medical Science Storytelling
+
+A health-education style for anatomy, physiology and evidence-led explainers. It moves from human scale to organ scale to the relevant tissue mechanism, with a connected evidence path, concise labels and explicit medical-safety rules.
+
+- [Style guide](styles/medical-science/STYLE.md)
+- [Key visual](assets/styles/medical-science.svg)
+- [Animated 30-second HTML demo](examples/medical-science-storytelling.html)
+
+The demo is a browser preview, not an MP4 export. It uses a simplified stomach-protection concept and is not a diagnostic image or medical advice.
