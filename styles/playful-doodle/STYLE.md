@@ -52,3 +52,12 @@ Sertakan naskah VO dan petunjuk render MP4.
 - Retention improvement is a hypothesis; test against actual channel analytics.
 
 [All styles](../../README.md#style-gallery) · [Motion generation guide](../../docs/MOTION_GUIDE.md)
+
+## Health-education adaptation
+
+Use for **basic child-friendly health habits** and simple prevention messages, not for clinical diagnosis or complex physiology.
+
+- Demonstrate the action with correct sequence and age-appropriate language.
+- Keep claims proportionate: a habit may reduce risk or support wellbeing, not guarantee an outcome.
+- Never shame children or families; avoid fear-based depictions of germs and illness.
+- For internal anatomy or body mechanisms, use `medical-science` or `anatomy-atlas`.
