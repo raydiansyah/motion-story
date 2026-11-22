@@ -31,7 +31,7 @@ If the user wants a Product Review (or a product-specific review using Product X
 
 ## Style-specific requirements
 - Read the style guide for palette, type system, recurring motif and motion signatures.
-- For Storyflow specifically, maintain an evolving connected graphic around the **signal orb**. For other styles, follow their own motifs and rules.
+- For Storyflow specifically, maintain an evolving connected graphic around the **signal orb**. For Medical Science Storytelling, maintain a connected anatomy-to-evidence path and follow its medical accuracy gates. For other styles, follow their own motifs and rules.
 - Use transitions motivated by the narrative and the chosen style; do not impose Storyflow's orb or connections on other visual systems.
 - Original shapes and layout only; do not copy visual assets or starter files from other projects.
 
@@ -41,7 +41,7 @@ If the user wants a Product Review (or a product-specific review using Product X
 - Duration, aspect ratio and exact render commands if exporting video.
 
 ## Research-backed style selection
-Consult `research/viral-styles-2026.md` for cited YouTube, TikTok and Indonesia insights. Select a style by the content's hook mechanism and explanatory evidence, not by presumed virality. The catalog currently contains nineteen styles. Do not hardcode style counts or fixed option lists; always read `styles/catalog.json`. Test one variable per matched variant, log retention and satisfaction indicators, and refine style choices based on observed channel performance.
+Consult `research/viral-styles-2026.md` for cited YouTube, TikTok and Indonesia insights. Select a style by the content's hook mechanism and explanatory evidence, not by presumed virality. Do not hardcode style counts or fixed option lists; always read `styles/catalog.json`. For `medical-science`, follow its medical accuracy and safety gates, source claims, and label simplified anatomy. Test one variable per matched variant, log retention and satisfaction indicators, and refine style choices based on observed channel performance.
 
 ## Cross-agent installation
 For Claude Code, Codex, Hermes, ChatGPT, and custom agents, read [docs/AGENT_INSTALL.md](docs/AGENT_INSTALL.md). Install the full skill directory, not just this file. For ChatGPT upload, package using `sh scripts/package-skill.sh` from a complete checkout. Do not assume cloud agents share a local filesystem.
