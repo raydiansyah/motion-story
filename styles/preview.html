@@ -16,7 +16,8 @@ const styles=[
 {id:"myth-breaker",name:"Myth Breaker",bg:"#F3F6F5",fg:"#182D32",a:"#EF654D",b:"#4AA69D",hook:["MITOS","ATAU FAKTA?"],label:"UJI ASUMSIMU DENGAN BUKTI",type:"split"},
 {id:"micro-drama",name:"Micro Drama",bg:"#1B1730",fg:"#FFF0DA",a:"#F2B86B",b:"#E36370",hook:["SATU","KEPUTUSAN"],label:"SEBUAH PILIHAN, DUA AKIBAT",type:"branch"},
 {id:"product-xray",name:"Product X-Ray",bg:"#F2F5F7",fg:"#182A38",a:"#4BB3D2",b:"#FF805F",hook:["APA YANG","BERBEDA?"],label:"LIHAT CARA KERJANYA",type:"xray"},
-{id:"anatomy-atlas",name:"Anatomy Atlas",bg:"#F3F0E7",fg:"#172A35",a:"#D75C59",b:"#3E90A4",hook:["LIHAT","STRUKTURNYA"],label:"ORIENTASI → STRUKTUR → JALUR",type:"atlas"},\n{id:"medical-science",name:"Medical Science",bg:"#071321",fg:"#F5F1E8",a:"#53E2D0",b:"#FF916D",hook:["BAGAIMANA","TUBUH BEKERJA?"],label:"SKALA MANUSIA → ORGAN → JARINGAN",type:"medical"}];
+{id:"anatomy-atlas",name:"Anatomy Atlas",bg:"#F3F0E7",fg:"#172A35",a:"#D75C59",b:"#3E90A4",hook:["LIHAT","STRUKTURNYA"],label:"ORIENTASI → STRUKTUR → JALUR",type:"atlas"},
+{id:"medical-science",name:"Medical Science",bg:"#071321",fg:"#F5F1E8",a:"#53E2D0",b:"#FF916D",hook:["BAGAIMANA","TUBUH BEKERJA?"],label:"SKALA MANUSIA → ORGAN → JARINGAN",type:"medical"}];
 const qs=new URLSearchParams(location.search), chosen=styles.find(x=>x.id===qs.get("style"))||styles[0];
 document.querySelector("#nav").innerHTML=styles.map(s=>'<a class="'+(s.id===chosen.id?'active':'')+'" href="?style='+s.id+'">'+s.name+'</a>').join('');
 const c=document.querySelector("#v"),x=c.getContext("2d"),W=1080,H=1920,D=8,clean=qs.has("clean");
