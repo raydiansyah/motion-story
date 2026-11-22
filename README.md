@@ -96,6 +96,31 @@ Six more styles modeled on a 2D animation style picker — character-led looks f
 <tr><td width="50%" valign="top"><a href="styles/chibi-explainer/STYLE.md"><img alt="Chibi Explainer style key visual" src="assets/styles/chibi-explainer.svg" width="100%"></a><br><strong><a href="styles/chibi-explainer/STYLE.md">Chibi Explainer</a></strong><br><sub>Business · education · process explainers. A big chibi presenter explains a living scene; board cards prove each step.</sub><br><br><strong>Hook:</strong> “Kenapa kopi susu di kedai rasanya beda?”</td><td width="50%" valign="top"><strong>How to animate these references</strong><br><br>Choose the style name, open the matching style guide, and build continuous motion with an evolving scene. Every new style includes a copy-ready prompt.<br><br><a href="docs/MOTION_GUIDE.md">Motion generation workflow</a></td></tr>
 </table>
 
+### Health & medical education styles
+
+These two styles were added for evidence-first health education. Their SVGs are **visual references**, while the matching browser preview demonstrates an **8-second animated motion study**. It is a procedural preview, not a rendered MP4 or a clinical anatomy reference.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="assets/styles/medical-science.svg"><img alt="Medical Science Storytelling — cinematic anatomy and tissue mechanism visual" src="assets/styles/medical-science.svg" width="100%"></a><br>
+<strong><a href="styles/medical-science/STYLE.md">Medical Science Storytelling</a></strong><br>
+<sub>Health literacy · physiology · prevention. Cinematic navy, cyan evidence path, organ-to-tissue scale journey and a clear takeaway.</sub><br><br>
+<strong>Sample topic:</strong> “Bagaimana lambung melindungi dirinya dari asam?”<br>
+<strong>Motion sample:</strong> <a href="styles/preview.html?style=medical-science">8-second Medical Science preview</a>
+</td>
+<td width="50%" valign="top">
+<a href="assets/styles/anatomy-atlas.svg"><img alt="Anatomy Atlas — labelled anatomical structure and flow path" src="assets/styles/anatomy-atlas.svg" width="100%"></a><br>
+<strong><a href="styles/anatomy-atlas/STYLE.md">Anatomy Atlas</a></strong><br>
+<sub>Anatomy · physiology · classroom. Warm atlas paper, precise callouts, restrained color coding and a traced pathway.</sub><br><br>
+<strong>Sample topic:</strong> “Bagaimana darah mengalir melalui jantung?”<br>
+<strong>Motion sample:</strong> <a href="styles/preview.html?style=anatomy-atlas">8-second Anatomy Atlas preview</a>
+</td>
+</tr>
+</table>
+
+**How to play the motion samples:** clone or download the repository, then open `styles/preview.html` in a browser and choose the style in the selector. The preview includes pause, restart and timeline scrubbing. GitHub README renders the SVG keyframes as images; it does not play the local HTML animation inline.
+
 [**Open all style definitions →**](styles/catalog.json) · [**Open animated style preview →**](styles/preview.html) · [**Read evidence & hook research →**](research/viral-styles-2026.md)
 
 ## Default style selection and product photo rule
