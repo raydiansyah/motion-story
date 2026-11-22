@@ -5,6 +5,36 @@
   "disclaimer": "Creative hypotheses, not a measured ranking or guarantee of virality.",
   "styles": [
     {
+      "id": "medical-science",
+      "name": "Medical Science Storytelling",
+      "niches": [
+        "health education",
+        "anatomy",
+        "physiology",
+        "science communication"
+      ],
+      "hook": "body-mechanism-reveal",
+      "palette": [
+        "#071321",
+        "#53E2D0",
+        "#FF916D",
+        "#F5F1E8"
+      ],
+      "motif": "anatomical-cutaway-to-evidence-path",
+      "motion": "human-to-organ-to-tissue scale journey, path-to-proof, layered tissue reveal",
+      "sample": "Bagaimana lambung melindungi dirinya dari asam?",
+      "beats": [
+        "curiosity hook",
+        "body orientation",
+        "mechanism reveal",
+        "meaning",
+        "health-literacy takeaway"
+      ],
+      "risk": "Use reputable sources; label simplified anatomy; never diagnose or prescribe; require qualified review for diagnosis, medication or treatment claims.",
+      "image": "assets/styles/medical-science.svg",
+      "guide": "styles/medical-science/STYLE.md"
+    },
+    {
       "id": "storyflow",
       "name": "Storyflow",
       "niches": [
