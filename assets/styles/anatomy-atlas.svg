@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" role="img" aria-labelledby="t d">
+<title id="t">Anatomy Atlas — visual identity</title><desc id="d">Warm-paper anatomical atlas design with a simplified heart illustration, measured callouts and arterial and venous flow paths.</desc>
+<rect width="1080" height="1440" fill="#F3F0E7"/>
+<g stroke="#172A35" opacity=".12" stroke-width="2"><path d="M80 360H1000M80 1110H1000M180 300V1200M900 300V1200"/></g>
+<text x="80" y="112" fill="#52636A" font-family="Arial,sans-serif" font-size="28" letter-spacing="7">MOTION STORY / ANATOMY ATLAS</text>
+<text x="80" y="225" fill="#172A35" font-family="Arial,sans-serif" font-size="82" font-weight="700">Inside the human body</text>
+<text x="80" y="290" fill="#52636A" font-family="Arial,sans-serif" font-size="30">Structure · pathway · relationship</text>
+<g transform="translate(540 730)">
+<path d="M-15 -170 C-90 -280 -230 -220 -220 -80 C-210 45 -80 155 0 235 C90 150 220 35 220 -85 C220 -230 70 -275 -15 -170Z" fill="#D75C59" stroke="#172A35" stroke-width="9"/>
+<path d="M-15 -170 C-70 -120 -100 -35 -55 45 C-15 110 20 160 0 235" fill="none" stroke="#F3F0E7" stroke-width="12" opacity=".85"/>
+<path d="M-40 -185 C-75 -275 -55 -335 -35 -385 M35 -180 C70 -270 85 -325 70 -385" fill="none" stroke="#3E90A4" stroke-width="28" stroke-linecap="round"/>
+<path d="M-30 -175 C-10 -265 5 -315 15 -390" fill="none" stroke="#D75C59" stroke-width="25" stroke-linecap="round"/>
+<path d="M-170 -75 C-115 -115 -70 -85 -55 -30 M150 -75 C100 -115 65 -80 55 -30" fill="none" stroke="#F3F0E7" stroke-width="9" opacity=".75"/>
+</g>
+<g fill="none" stroke="#172A35" stroke-width="3"><path d="M370 560H190L140 510"/><path d="M710 640H890L940 590"/><path d="M560 1000V1120H800"/></g>
+<g fill="#172A35" font-family="Arial,sans-serif"><text x="90" y="480" font-size="28" font-weight="700">01 / Struktur</text><text x="90" y="520" font-size="23" fill="#52636A">Tunjukkan bagian yang dibahas</text><text x="820" y="555" font-size="28" font-weight="700">02 / Jalur</text><text x="820" y="595" font-size="23" fill="#52636A">Ikuti alur yang terverifikasi</text><text x="690" y="1170" font-size="28" font-weight="700">03 / Hubungan</text><text x="690" y="1210" font-size="23" fill="#52636A">Kembali ke gambaran utuh</text></g>
+<rect x="80" y="1290" width="920" height="2" fill="#172A35" opacity=".25"/>
+<text x="80" y="1350" fill="#52636A" font-family="Arial,sans-serif" font-size="24">SIMPLIFIED EDUCATIONAL ILLUSTRATION · NOT DIAGNOSTIC</text>
+</svg>
